@@ -1,0 +1,3 @@
+Musnad ahmed:
+pdf was OCRed using ABBYY Finereader 12, and then converted into text using poppler's pdftotext .
+The content was escapsed using escape package ,ref: https://www.npmjs.com/package/escape-html
