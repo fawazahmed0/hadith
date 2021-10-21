@@ -1,0 +1,1858 @@
+1 Sahih
+2 Sahih
+3 Sahih Lighairihi
+4 Sahih
+5 Sahih
+6 Mauquf Daif
+7 Mauquf Sahih
+8 Mauquf Daif
+9 Mauquf Sahih
+10 Sahih
+11 Sahih
+12 Mauquf Sahih
+13 Maqtu Sahih
+14 Mauquf Hasan
+15 Sahih
+16 Mauquf Sahih
+17 Mauquf Daif
+18 Mauquf Daif
+19 Mauquf Sahih
+20 Mauquf Daif
+21 Sahih
+22 Mauquf Daif
+23 Maqtu Sahih
+24 Mauquf Sahih
+25 Sahih
+26 Hasan Lighairihi
+27 Sahih Lighairihi
+28 Sahih
+29 Sahih
+30 Sahih
+31 Maqtu Sahih
+32 Sahih
+33 Sahih
+34 Sahih
+35 Sahih
+36 Mauquf Hasan
+37 Sahih
+38 Mauquf Daif
+39 Maqtu Sahih
+40 Mauquf Sahih
+41 Sahih
+42 Sahih
+43 Mauquf Daif
+44 Sahih
+45 Sahih Lighairihi
+46 Maqtu Sahih
+47 Mauquf Sahih
+48 Sahih
+49 Sahih
+50 Mauquf Sahih
+51 Mauquf Sahih
+52 Mauquf Sahih
+53 Mauquf Sahih
+54 Mauquf Sahih
+55 Sahih
+56 Mauquf Hasan
+57 Sahih Lighairihi
+58 Sahih
+59 Sahih
+60 Sahih Lighairihi
+61 Sahih
+62 Sahih
+63 Mauquf Sahih
+64 Maqtu Sahih
+65 Sahih
+66 Sahih Lighairihi
+67 Mauquf Sahih
+68 Mauquf Daif
+69 Mauquf Sahih
+70 Maqtu Sahih
+71 Sahih Lighairihi
+72 Mauquf Sahih
+73 Mauquf Sahih
+74 Mauquf Sahih
+75 Maqtu Sahih
+76 Maqtu Sahih
+77 Mauquf Sahih
+78 Mauquf Daif
+79 Mauquf Sahih
+80 Maqtu Hasan
+81 Maqtu Sahih
+82 Mauquf Sahih
+83 Maqtu Sahih
+84 Sahih Lighairihi
+85 Mauquf Sahih
+86 Mauquf Daif
+87 Maqtu Sahih
+88 Maqtu Sahih
+89 Sahih
+90 Sahih
+91 Mauquf Sahih
+92 Maqtu Sahih
+93 Mauquf Sahih
+94 Mauquf Sahih
+95 Mauquf Sahih
+96 Mauquf Sahih
+97 Maqtu Sahih
+98 Sahih
+99 Sahih
+100 Mauquf Sahih
+101 Mauquf Daif
+102 Mauquf Sahih
+103 Mauquf Sahih
+104 Mauquf Sahih
+105 Mauquf Hasan
+106 Mauquf Sahih
+107 Sahih
+108 Mauquf Sahih
+109 Mauquf Sahih
+110 Sahih Lighairihi
+111 Mauquf Sahih
+112 Mauquf Daif
+113 Mauquf Daif
+114 Mauquf Sahih
+115 Sahih Lighairihi
+116 Mauquf Sahih
+117 Sahih
+118 Mauquf Sahih
+119 Mauquf Sahih
+120 Sahih
+121 Mauquf Sahih
+122 Mauquf Sahih
+123 Maqtu Hasan
+124 Sahih Lighairihi
+125 Sahih Lighairihi
+126 Sahih Lighairihi
+127 Maqtu Sahih Lighairihi
+128 Mauquf Sahih لغيره
+129 Maqtu Daif
+130 Mauquf Hasan
+131 Maqtu Sahih
+132 Sahih
+133 Sahih
+134 Sahih
+135 Sahih
+136 Mauquf Sahih
+137 Maqtu Sahih
+138 Maqtu Sahih
+139 Sahih
+140 Sahih
+141 Daif
+142 Mauquf Sahih
+143 Daif
+144 Sahih
+145 Mauquf Sahih
+146 Mursal Sahih Isnad
+147 Sahih
+148 Sahih
+149 Sahih
+150 Sahih
+151 Sahih
+152 Mauquf Sahih
+153 Mauquf Daif
+154 Maqtu Sahih
+155 Mauquf Sahih
+156 Sahih
+157 Mauquf Sahih
+158 Maqtu Sahih
+159 Maqtu Sahih
+160 Sahih
+161 Sahih
+162 Sahih
+163 Sahih Lighairihi
+164 Sahih
+165 Sahih Lighairihi
+166 Mauquf Sahih
+167 Mauquf Sahih
+168 Mauquf Sahih
+169 Maqtu Sahih
+170 Sahih
+171 Sahih
+172 Mauquf Sahih
+173 Mauquf Sahih
+174 Maqtu Sahih
+175 Sahih
+176 Sahih
+177 Mauquf Sahih
+178 Mauquf Sahih
+179 Mauquf Sahih
+180 Maqtu Sahih
+181 Mauquf Sahih لغيره
+182 Mauquf Sahih
+183 Mauquf Hasan
+184 Mauquf Sahih
+185 Sahih Lighairihi
+186 Mauquf Sahih
+187 Sahih
+188 Maqtu Sahih
+189 Maqtu Sahih
+190 Maqtu Sahih
+191 Mauquf Sahih
+192 Sahih
+193 Sahih
+194 Sahih
+195 Sahih
+196 Sahih
+197 Sahih
+198 Mauquf Sahih
+199 Mauquf Sahih
+200 Sahih
+201 Mauquf Sahih
+202 Mauquf Sahih
+203 Mauquf Sahih
+204 Mauquf Sahih
+205 Mauquf Sahih
+206 Maqtu Sahih
+207 Mauquf Daif
+208 Sahih
+209 Sahih
+210 Sahih Lighairihi
+211 Sahih Lighairihi
+212 Sahih 
+213 Mauquf Sahih
+214 Mauquf Sahih
+215 Mauquf Sahih
+216 Sahih
+217 Sahih
+218 Hasan
+219 Sahih
+220 Daif
+221 Mauquf Daif
+222 Sahih
+223 Daif
+224 Maqtu Daif
+225 Sahih
+226 Maqtu Sahih
+227 Maqtu Sahih
+228 Sahih
+229 Sahih
+230 Sahih
+231 Mauquf Sahih
+232 Mauquf Sahih
+233 Mauquf Sahih
+234 Maqtu Sahih
+235 Maqtu Sahih
+236 Maqtu Sahih
+237 Mauquf Sahih
+238 Sahih
+239 Sahih
+240 Hasan Lighairihi
+241 Mauquf Sahih
+242 Mauquf Sahih
+243 Sahih
+244 Sahih Lighairihi
+245 Sahih Lighairihi
+246 Sahih
+247 Sahih
+248 Mauquf Sahih
+249 Mauquf Sahih
+250 Mauquf Munqar
+251 Mauquf Sahih
+252 Maqtu Sahih
+253 Mauquf Sahih
+254 Sahih Lighairihi
+255 Sahih
+256 Sahih
+257 Sahih Lighairihi
+258 Mauquf Sahih
+259 Maqtu Daif
+260 Mauquf Sahih
+261 Sahih
+262 Sahih
+263 Sahih
+264 Sahih
+265 Sahih
+266 Sahih
+267 Sahih
+268 Sahih
+269 Mauquf Sahih
+270 Mauquf Sahih
+271 Mauquf Daif
+272 Mauquf Sahih
+273 Mauquf Sahih
+274 Mauquf Sahih
+275 Mauquf Sahih
+276 Mauquf Daif
+277 Mauquf Daif
+278 Mauquf Daif
+279 Mauquf Daif
+280 Maqtu Sahih
+281 Maqtu Sahih
+282 Sahih
+283 Sahih
+284 Sahih Lighairihi
+285 Mauquf Sahih
+286 Maqtu Sahih
+287 Sahih
+288 Sahih
+289 Sahih
+290 Mauquf Sahih
+291 Sahih Lighairihi
+292 Sahih
+293 Mauquf Sahih
+294 Mauquf Sahih
+295 Hasan Lighairihi
+296 Mauquf Sahih
+297 Maqtu Sahih
+298 Mauquf Daif
+299 Sahih
+300 Sahih
+301 Mauquf Sahih
+302 Maqtu Sahih
+303 Sahih
+304 Sahih
+305 Sahih
+306 Sahih
+307 Daif
+308 Sahih
+309 Sahih
+310 Sahih
+311 Maqtu Sahih
+312 Sahih
+313 Mauquf Hasan
+314 Mauquf Sahih
+315 Mauquf Daif
+316 Sahih
+317 Sahih
+318 Mauquf Sahih
+319 Mauquf Sahih
+320 Maqtu Sahih
+321 Sahih Lighairihi
+322 Mauquf Sahih
+323 Mauquf Daif
+324 Mauquf Sahih
+325 Maqtu Sahih
+326 Sahih
+327 Sahih
+328 Sahih
+329 Sahih
+330 Mauquf Sahih
+331 Maqtu Sahih
+332 Sahih Lighairihi
+333 Sahih Lighairihi
+334 Sahih
+335 Mauquf Sahih
+336 Mauquf Sahih
+337 Mauquf Sahih
+338 Mauquf Sahih
+339 Mauquf Sahih
+340 Mauquf Sahih
+341 Mauquf Sahih
+342 Mauquf Sahih
+343 Mauquf Sahih
+344 Mauquf Sahih
+345 Maqtu Sahih
+346 Mauquf Sahih
+347 Mauquf Sahih
+348 Mauquf Sahih
+349 Mauquf Sahih
+350 Mauquf Sahih
+351 Maqtu Daif
+352 Mauquf Daif
+353 Sahih
+354 Sahih
+355 Mauquf Sahih
+356 Sahih
+357 Sahih
+358 Sahih
+359 Mauquf Daif
+360 Sahih
+361 Mauquf Sahih
+362 Sahih
+363 Sahih
+364 Maqtu Sahih
+365 Mauquf Sahih
+366 Mauquf Sahih
+367 Sahih
+368 Mauquf Daif
+369 Mauquf Sahih
+370 Mauquf Sahih
+371 Mauquf Sahih
+372 Mauquf Sahih
+373 Mauquf Sahih
+374 Mauquf Daif
+375 Mauquf Sahih
+376 Mauquf Sahih
+377 Maqtu Sahih
+378 Sahih
+379 Mauquf Sahih
+380 Sahih
+381 Mauquf Daif
+382 Sahih
+383 Sahih
+384 Maqtu Sahih
+385 Mauquf Sahih
+386 Sahih
+387 Maqtu Daif
+388 Sahih
+389 Maqtu Sahih
+390 Mauquf Sahih
+391 Mauquf Sahih
+392 Sahih
+393 Mauquf Sahih
+394 Mauquf Sahih
+395 Mauquf Sahih
+396 Mauquf Sahih
+397 Sahih
+398 Mauquf Sahih
+399 Mauquf Sahih
+400 Sahih
+401 Sahih
+402 Sahih
+403 Sahih Lighairihi
+404 Sahih Lighairihi
+405 Mauquf Sahih
+406 Mauquf Sahih لغيره
+407 Mauquf Sahih
+408 Mauquf Sahih
+409 Mauquf Sahih
+410 Mauquf Daif
+411 Maqtu Sahih
+412 Sahih
+413 Mauquf Sahih
+414 Sahih
+415 Sahih
+416 Sahih Lighairihi
+417 Hasan
+418 Sahih
+419 Mauquf Sahih
+420 Mauquf Sahih
+421 Maqtu Daif
+422 Sahih
+423 Sahih
+424 Maqtu Daif
+425 Mauquf Daif
+426 Sahih
+427 Sahih
+428 Sahih
+429 Mauquf Sahih
+430 Sahih Lighairihi
+431 Mauquf Sahih
+432 Mauquf Sahih
+433 Maqtu Sahih
+434 Maqtu Sahih
+435 Sahih
+436 Mauquf Sahih
+437 Mauquf Sahih
+438 Maqtu Daif
+439 Maqtu Sahih
+440 Mauquf Sahih
+441 Sahih
+442 Sahih
+443 Sahih
+444 Sahih Lighairihi
+445 Sahih
+446 Sahih
+447 Sahih
+448 Sahih
+449 Sahih
+450 Hasan
+451 Sahih
+452 Sahih
+453 Mawdu(fabricated)
+454 Mauquf Daif
+455 Sahih
+456 Sahih Lighairihi
+457 Sahih
+458 Sahih
+459 Sahih
+460 Sahih
+461 Sahih Lighairihi
+462 Mauquf Sahih
+463 Sahih
+464 Sahih
+465 Sahih
+466 Sahih
+467 Sahih
+468 Mauquf Daif
+469 Mauquf Sahih
+470 Sahih Lighairihi
+471 Mauquf Sahih لغيره
+472 Mauquf Sahih
+473 Mauquf Daif
+474 Sahih
+475 Sahih
+476 Sahih
+477 Sahih
+478 Sahih
+479 Sahih
+480 Mauquf Daif
+481 Sahih
+482 Mauquf Daif
+483 Mauquf Sahih
+484 Mauquf Sahih
+485 Mauquf Sahih
+486 Sahih
+487 Sahih
+488 Maqtu Sahih
+489 Sahih
+490 Sahih
+491 Mauquf Sahih
+492 Maqtu Sahih
+493 Mauquf Daif
+494 Sahih
+495 Sahih
+496 Daif
+497 Sahih
+498 Sahih
+499 Sahih
+500 Sahih Lighairihi
+501 Sahih Lighairihi
+502 Sahih
+503 Sahih
+504 Sahih
+505 Maqtu Sahih
+506 Mauquf Sahih
+507 Maqtu Sahih
+508 Sahih
+509 Sahih Lighairihi
+510 Sahih Lighairihi
+511 Mauquf Daif
+512 Mauquf Daif
+513 Daif
+514 Sahih
+515 Sahih
+516 Sahih
+517 Sahih
+518 Mauquf Sahih
+519 Mauquf Sahih
+520 Sahih Lighairihi
+521 Sahih
+522 Mauquf Daif
+523 Sahih
+524 Sahih Lighairihi
+525 Mauquf Sahih لغيره
+526 Mauquf Sahih
+527 Mauquf Sahih
+528 Mauquf Sahih
+529 Mauquf Sahih
+530 Maqtu Sahih
+531 Mauquf Sahih
+532 Mauquf Sahih
+533 Sahih
+534 Sahih
+535 Maqtu Sahih
+536 Mauquf Sahih
+537 Mauquf Sahih
+538 Mauquf Sahih
+539 Mauquf Sahih
+540 Mauquf Sahih
+541 Sahih
+542 Mauquf Sahih
+543 Mauquf Sahih
+544 Mauquf Sahih
+545 Mauquf Sahih
+546 Sahih
+547 Sahih
+548 Mauquf Daif
+549 Mauquf Sahih
+550 Mauquf Daif
+551 Maqtu Sahih
+552 Sahih
+553 Mauquf Daif
+554 Mauquf Sahih
+555 Sahih Lighairihi
+556 Sahih
+557 Sahih
+558 Sahih
+559 Sahih
+560 Sahih Lighairihi
+561 Sahih
+562 Maqtu Sahih
+563 Daif
+564 Mauquf Daif
+565 Sahih
+566 Sahih
+567 Sahih
+568 Sahih
+569 Sahih
+570 Sahih
+571 Sahih
+572 Sahih
+573 Sahih
+574 Sahih
+575 Daif
+576 Hasan
+577 Mauquf Sahih
+578 Sahih
+579 Sahih
+580 Maqtu Daif
+581 Mauquf Daif
+582 Mauquf Sahih
+583 Mauquf Sahih
+584 Maqtu Sahih
+585 Daif
+586 Sahih
+587 Mauquf Sahih
+588 Mauquf Sahih
+589 Mauquf Sahih
+590 Mauquf Sahih
+591 Mauquf Sahih
+592 Maqtu Sahih
+593 Mauquf Sahih
+594 Maqtu Daif
+595 Maqtu Sahih
+596 Maqtu Hasan
+597 Mauquf Sahih
+598 Mauquf Sahih
+599 Mauquf Sahih
+600 Daif
+601 Mauquf Hasan
+602 Mauquf Sahih
+603 Mauquf Daif
+604 Sahih
+605 Mauquf Sahih
+606 Mauquf Daif
+607 Maqtu Daif
+608 Sahih Lighairihi
+609 Maqtu Sahih
+610 Maqtu Sahih
+611 Sahih
+612 Mauquf Daif
+613 Maqtu Sahih
+614 Maqtu Sahih
+615 Sahih Lighairihi
+616 Daif
+617 Mauquf Sahih
+618 Mauquf Sahih
+619 Maqtu Daif
+620 Sahih
+621 Mauquf Sahih
+622 Maqtu Sahih
+623 Sahih
+624 Sahih
+625 Mauquf Sahih
+626 Sahih
+627 Sahih
+628 Mauquf Sahih
+629 Mauquf Sahih
+630 Sahih
+631 Sahih
+632 Sahih
+633 Mauquf Daif
+634 Mauquf Sahih
+635 Mauquf Daif
+636 Sahih
+637 Hasan
+638 Mauquf Daif
+639 Sahih
+640 Sahih
+641 Sahih
+642 Sahih
+643 Sahih
+644 Sahih
+645 Mauquf Daif
+646 Mauquf Sahih
+647 Mauquf Sahih
+648 Maqtu Sahih
+649 Mauquf Sahih
+650 Mauquf Sahih
+651 Sahih
+652 Sahih
+653 Sahih
+654 Sahih
+655 Sahih
+656 Mauquf Sahih
+657 Maqtu Sahih
+658 Mauquf Daif
+659 Sahih
+660 Daif
+661 Sahih
+662 Mauquf Daif
+663 Maqtu Sahih
+664 Sahih
+665 Sahih
+666 Mauquf Daif
+667 Sahih
+668 Sahih
+669 Sahih
+670 Daif
+671 Maqtu Daif
+672 Maqtu Daif
+673 Mauquf Sahih
+674 Mauquf Sahih
+675 Mauquf Sahih
+676 Mauquf Daif
+677 Mauquf Sahih
+678 Maqtu Sahih
+679 Hasan
+680 Mauquf
+681 Mauquf Sahih
+682 Mauquf Sahih
+683 Maqtu Sahih
+684 Maqtu Daif
+685 Mauquf Sahih
+686 Sahih
+687 Sahih
+688 Sahih
+689 Mauquf Sahih
+690 Sahih
+691 Mauquf Sahih
+692 Maqtu Sahih
+693 Maqtu Daif
+694 Maqtu Sahih
+695 Shaza Sahih
+696 Sahih
+697 Sahih
+698 Sahih
+699 Sahih
+700 Sahih
+701 Sahih
+702 Sahih
+703 Daif
+704 Maqtu Daif
+705 Sahih Lighairihi
+706 Sahih Lighairihi
+707 Mauquf Sahih
+708 Sahih
+709 Mauquf Sahih لغيره
+710 Mauquf Sahih
+711 Mauquf Sahih
+712 Sahih
+713 Sahih
+714 Mauquf Sahih
+715 Mauquf Sahih
+716 Mauquf Sahih
+717 Maqtu Sahih
+718 Mauquf Sahih
+719 Mauquf Sahih
+720 Mauquf Sahih
+721 Mauquf Sahih
+722 Sahih
+723 Sahih
+724 Mauquf Sahih
+725 Mauquf Daif
+726 Maqtu Sahih
+727 Daif
+728 Sahih
+729 Sahih
+730 Mauquf Sahih
+731 Mauquf Sahih
+732 Mauquf Sahih
+733 Sahih
+734 Sahih Lighairihi
+735 Sahih
+736 Sahih
+737 Mauquf Sahih
+738 Maqtu Daif
+739 Sahih
+740 Sahih
+741 Sahih
+742 Sahih
+743 Mauquf Daif
+744 Sahih Lighairihi
+745 Sahih
+746 Mauquf Daif
+747 Mauquf Sahih
+748 Mauquf Sahih
+749 Mauquf Daif
+750 Mauquf Hasan
+751 Maqtu Sahih
+752 Mauquf Daif
+753 Mauquf Sahih
+754 Sahih
+755 Mauquf Sahih
+756 Mauquf Sahih
+757 Mauquf Sahih
+758 Sahih Lighairihi
+759 Sahih
+760 Sahih Lighairihi
+761 Mauquf Sahih
+762 Maqtu Sahih
+763 Daif
+764 Mauquf Sahih
+765 Mauquf Sahih
+766 Mauquf Sahih
+767 Sahih
+768 Sahih
+769 Mauquf Sahih
+770 Mauquf Daif
+771 Daif
+772 Sahih
+773 Mauquf Daif
+774 Mauquf Sahih
+775 Maqtu Daif
+776 Sahih Lighairihi
+777 Mauquf Sahih
+778 Sahih
+779 Mauquf Sahih
+780 Sahih
+781 Sahih
+782 Mauquf Sahih
+783 Mauquf Sahih
+784 Mauquf Daif
+785 Sahih
+786 Mauquf Sahih
+787 Mauquf Sahih
+788 Sahih
+789 Sahih
+790 Sahih
+791 Mauquf Sahih
+792 Mauquf Sahih
+793 Mauquf Hasan
+794 Mauquf Sahih
+795 Mauquf Sahih
+796 Mauquf Sahih
+797 Sahih
+798 Sahih Lighairihi
+799 Sahih
+800 Mauquf Sahih
+801 Mauquf Sahih
+802 Mauquf Sahih
+803 Mauquf Sahih
+804 Mauquf Sahih
+805 Sahih
+806 Mauquf Sahih
+807 Maqtu Sahih
+808 Sahih
+809 Mauquf Sahih
+810 Maqtu Sahih
+811 Mauquf Sahih
+812 Mauquf Sahih
+813 Sahih
+814 Daif
+815 Maqtu Sahih
+816 Mauquf Sahih لغيره
+817 Maqtu Sahih
+818 Mauquf Sahih
+819 Mauquf Sahih
+820 Maqtu Sahih
+821 Mauquf Sahih
+822 Maqtu Sahih
+823 Mauquf Daif
+824 Maqtu Sahih
+825 Sahih
+826 Mauquf Daif
+827 Mauquf Daif
+828 Sahih
+829 Sahih
+830 Mauquf Sahih
+831 Sahih
+832 Maqtu Sahih
+833 Sahih
+834 Mauquf Sahih
+835 Sahih Lighairihi
+836 Sahih Lighairihi
+837 Sahih
+838 Sahih
+839 Sahih Lighairihi
+840 Sahih
+841 Mauquf Sahih
+842 Maqtu Sahih
+843 Mauquf Sahih
+844 Mauquf Sahih
+845 Maqtu Sahih 
+846 Maqtu Sahih
+847 Mauquf Sahih
+848 Mauquf Sahih
+849 Mauquf Sahih
+850 Mauquf Sahih
+851 Mauquf Sahih
+852 Mauquf Sahih
+853 Maqtu Sahih
+854 Sahih
+855 Maqtu Sahih
+856 Mauquf Daif
+857 Maqtu Sahih
+858 Mauquf Sahih
+859 Mauquf Daif
+860 Maqtu Sahih
+861 Mauquf Daif
+862 Mauquf Daif
+863 Mauquf Sahih
+864 Mauquf Sahih
+865 Maqtu Sahih
+866 Mauquf Daif
+867 Mauquf Sahih لغيره
+868 Mauquf Sahih
+869 Maqtu Daif
+870 Mauquf Sahih
+871 Mauquf Sahih
+872 Mauquf Hasan
+873 Sahih
+874 Mauquf Sahih
+875 Mauquf Sahih
+876 Maqtu Sahih
+877 Mauquf Sahih
+878 Mauquf Sahih
+879 Mauquf Daif
+880 Mauquf Sahih
+881 Sahih
+882 Mauquf Sahih
+883 Sahih Lighairihi
+884 Sahih
+885 Sahih
+886 Sahih
+887 Mauquf Sahih
+888 Maqtu Sahih
+889 Sahih
+890 Maqtu Sahih
+891 Mauquf Sahih
+892 Mauquf Sahih
+893 Maqtu Sahih
+894 Mauquf Sahih
+895 Maqtu Daif
+896 Mauquf Sahih
+897 Mauquf Sahih
+898 Sahih
+899 Sahih
+900 Mauquf Sahih
+901 Sahih
+902 Sahih
+903 Sahih
+904 Mauquf Sahih
+905 Sahih Lighairihi
+906 Mauquf Sahih
+907 Mauquf Sahih
+908 Mauquf Daif
+909 Sahih
+910 Mauquf Sahih
+911 Mauquf Daif
+912 Mauquf Sahih
+913 Maqtu Sahih
+914 Daif
+915 Mauquf Sahih
+916 Mauquf Sahih
+917 Mauquf Sahih
+918 Maqtu Sahih
+919 Maqtu Sahih
+920 Mauquf Sahih
+921 Sahih
+922 Sahih
+923 Mauquf Hasan
+924 Mauquf Sahih
+925 Mauquf Sahih
+926 Daif
+927 Sahih
+928 Sahih
+929 Sahih
+930 Sahih
+931 Mauquf Sahih
+932 Sahih
+933 Daif
+934 Mauquf Sahih
+935 Sahih
+936 Maqtu Sahih
+937 Maqtu Sahih
+938 Mauquf Daif
+939 Mauquf Daif
+940 Sahih
+941 Sahih
+942 Sahih Lighairihi
+943 Mauquf Sahih
+944 Sahih
+945 Sahih
+946 Sahih
+947 Daif
+948 Sahih Lighairihi
+949 Sahih
+950 Mauquf Sahih
+951 Maqtu Sahih
+952 Daif
+953 Mauquf Daif
+954 Mauquf Daif
+955 Mauquf Daif
+956 Maqtu Sahih
+957 Mauquf Sahih
+958 Mauquf Sahih
+959 Sahih
+960 Sahih
+961 Sahih
+962 Sahih
+963 Sahih
+964 Mauquf Sahih
+965 Sahih
+966 Sahih
+967 Sahih
+968 Mauquf Daif
+969 Mauquf Daif
+970 Mauquf Daif
+971 Mauquf Sahih
+972 Maqtu Sahih
+973 Sahih
+974 Maqtu Sahih
+975 Sahih
+976 Sahih
+977 Mauquf Sahih
+978 Maqtu Sahih
+979 Mauquf Daif Marfu Sahih Lighairihi
+980 Hasan
+981 Daif
+982 Daif
+983 Sahih
+984 Sahih Lighairihi
+985 Sahih
+986 Sahih
+987 Sahih
+988 Mauquf Sahih
+989 Sahih
+990 Daif
+991 Daif
+992 Mauquf Sahih
+993 Mauquf Daif
+994 Mauquf Sahih
+995 Mauquf Daif
+996 Sahih
+997 Sahih
+998 Daif
+999 Daif
+1000 Mauquf Sahih
+1001 Sahih
+1002 Sahih
+1003 Maqtu Sahih
+1004 Sahih Lighairihi
+1005 Sahih
+1006 Sahih
+1007 Maqtu Daif
+1008 Sahih Lighairihi
+1009 Sahih
+1010 Mauquf Daif
+1011 Maqtu Daif
+1012 Mauquf Hasan
+1013 Maqtu Daif
+1014 Maqtu Sahih
+1015 Sahih Lighairihi
+1016 Mauquf Sahih
+1017 Sahih
+1018 Mauquf Sahih
+1019 Hasan
+1020 Sahih
+1021 Mauquf Sahih
+1022 Mauquf Sahih
+1023 Maqtu Sahih
+1024 Sahih
+1025 Sahih
+1026 Sahih
+1027 Sahih
+1028 Sahih
+1029 Mauquf Sahih
+1030 Mauquf Sahih
+1031 Sahih
+1032 Sahih Lighairihi
+1033 Sahih
+1034 Sahih
+1035 Sahih Lighairihi
+1036 Sahih
+1037 Mauquf Sahih
+1038 Sahih Lighairihi
+1039 Mauquf Sahih
+1040 Mauquf Daif
+1041 Mauquf Sahih
+1042 Sahih
+1043 Maqtu Sahih
+1044 Sahih
+1045 Sahih
+1046 Mauquf Sahih
+1047 Mauquf Daif
+1048 Maqtu Sahih
+1049 Mauquf Sahih
+1050 Mauquf Sahih
+1051 Mauquf Sahih
+1052 Mauquf Sahih
+1053 Maqtu Daif
+1054 Maqtu Daif
+1055 Mauquf Sahih
+1056 Mauquf Sahih
+1057 Mauquf Hasan
+1058 Mauquf Sahih
+1059 Mauquf Hasan
+1060 Mauquf Sahih
+1061 Mauquf Sahih
+1062 Shaza 
+1063 Sahih
+1064 Sahih
+1065 Sahih
+1066 Daif
+1067 Sahih Lighairihi
+1068 Mauquf Daif
+1069 Mauquf Daif
+1070 Mauquf Sahih
+1071 Maqtu Sahih
+1072 Hasan
+1073 Sahih
+1074 Mauquf Sahih
+1075 Mauquf Sahih
+1076 Mauquf Daif
+1077 Daif
+1078 Mauquf Daif
+1079 Mauquf Daif
+1080 Sahih Lighairihi
+1081 Mauquf Daif
+1082 Mauquf Daif
+1083 Sahih
+1084 Maqtu Sahih
+1085 Mauquf Hasan
+1086 Maqtu Sahih
+1087 Mauquf Sahih
+1088 Maqtu Sahih
+1089 Maqtu Daif
+1090 Daif
+1091 Sahih
+1092 Sahih
+1093 Maqtu Sahih
+1094 Sahih
+1095 Mauquf Sahih
+1096 Maqtu Daif
+1097 Maqtu Daif
+1098 Sahih
+1099 Mauquf Sahih
+1100 Mauquf Sahih
+1101 Maqtu Daif
+1102 Mauquf Sahih
+1103 Mauquf Daif
+1104 Maqtu Daif
+1105 Sahih
+1106 Mauquf Sahih
+1107 Maqtu Daif
+1108 Sahih Lighairihi
+1109 Mauquf Sahih
+1110 Maqtu Daif
+1111 Sahih
+1112 Maqtu Sahih
+1113 Mauquf Daif
+1114 Mauquf Daif
+1115 Sahih
+1116 Sahih
+1117 Mauquf Daif
+1118 Mauquf Sahih
+1119 Mauquf Daif
+1120 Maqtu Sahih
+1121 Mauquf Sahih
+1122 Maqtu Daif
+1123 Maqtu Sahih
+1124 Mauquf Sahih
+1125 Mauquf Sahih
+1126 Sahih
+1127 Mauquf Daif
+1128 Maqtu Sahih
+1129 Maqtu Sahih
+1130 Maqtu Sahih
+1131 Maqtu Sahih
+1132 Maqtu Sahih
+1133 Mauquf Sahih
+1134 Sahih
+1135 Maqtu Sahih
+1136 Daif
+1137 Daif
+1138 Daif
+1139 Sahih
+1140 Sahih
+1141 Sahih
+1142 Mauquf Sahih
+1143 Sahih
+1144 Sahih Lighairihi
+1145 Sahih Lighairihi
+1146 Maqtu Sahih
+1147 Maqtu Sahih
+1148 Maqtu Sahih
+1149 Mauquf Daif
+1150 Mauquf Sahih
+1151 Mauquf Sahih
+1152 Maqtu Sahih
+1153 Maqtu Sahih
+1154 Mauquf Daif
+1155 Mauquf Daif
+1156 Mauquf Sahih
+1157 Maqtu Sahih
+1158 Maqtu Sahih
+1159 Mauquf Daif
+1160 Mauquf Sahih
+1161 Mauquf Sahih
+1162 Maqtu Sahih
+1163 Mauquf Sahih
+1164 Mauquf Sahih
+1165 Mauquf Daif
+1166 Maqtu Sahih
+1167 Mauquf Daif
+1168 Sahih
+1169 Maqtu Sahih
+1170 Maqtu Daif
+1171 Daif
+1172 Maqtu Sahih
+1173 Maqtu Sahih
+1174 Maqtu Daif
+1175 Maqtu Sahih
+1176 Hasan
+1177 Maqtu Sahih
+1178 Sahih
+1179 Sahih
+1180 Mauquf Sahih
+1181 Mauquf Daif
+1182 Maqtu Daif
+1183 Maqtu Sahih
+1184 Sahih
+1185 Mauquf Daif
+1186 Mauquf Sahih
+1187 Maqtu Daif
+1188 Sahih
+1189 Sahih
+1190 Maqtu Daif
+1191 Maqtu Daif
+1192 Mauquf Sahih
+1193 Mauquf Sahih
+1194 Mauquf Sahih
+1195 Mauquf Sahih
+1196 Mauquf Daif
+1197 Mauquf Daif
+1198 Mauquf Daif
+1199 Maqtu Sahih
+1200 Mauquf Daif
+1201 Mauquf Sahih
+1202 Maqtu Sahih
+1203 Maqtu Daif
+1204 Mauquf Sahih
+1205 Mauquf Sahih
+1206 Mauquf Daif
+1207 Mauquf Sahih
+1208 Mauquf Sahih
+1209 Mauquf Sahih
+1210 Sahih
+1211 Sahih
+1212 Mauquf Sahih
+1213 Maqtu Sahih
+1214 Mauquf Sahih
+1215 Maqtu Sahih
+1216 Mauquf Sahih
+1217 Maqtu Sahih
+1218 Maqtu Daif
+1219 Maqtu Sahih
+1220 Maqtu Daif
+1221 Mauquf Sahih
+1222 Mauquf Sahih
+1223 Mauquf Sahih
+1224 Maqtu Sahih
+1225 Sahih
+1226 Maqtu Sahih
+1227 Mauquf Sahih
+1228 Maqtu Sahih
+1229 Maqtu Sahih
+1230 Mauquf Daif
+1231 Daif
+1232 Mauquf Daif
+1233 Maqtu Daif
+1234 Maqtu Sahih
+1235 Maqtu Sahih
+1236 Mauquf Sahih
+1237 Mauquf Sahih
+1238 Mauquf Sahih
+1239 Daif
+1240 Daif
+1241 Maqtu Daif
+1242 Maqtu Sahih
+1243 Sahih
+1244 Mauquf Sahih
+1245 Sahih
+1246 Sahih
+1247 Sahih
+1248 Mauquf Sahih
+1249 Mauquf Daif
+1250 Maqtu Sahih
+1251 Mauquf Sahih
+1252 Maqtu Sahih
+1253 Mauquf Sahih
+1254 Maqtu Sahih
+1255 Maqtu Daif
+1256 Maqtu Sahih
+1257 Sahih
+1258 Mauquf Sahih
+1259 Mauquf Daif
+1260 Mauquf Sahih
+1261 Mauquf Sahih
+1262 Mauquf Daif
+1263 Sahih
+1264 Sahih
+1265 Sahih
+1266 Maqtu Sahih
+1267 Mauquf Daif 
+1268 Maqtu Daif
+1269 Maqtu Sahih
+1270 Daif
+1271 Mauquf Daif
+1272 Sahih
+1273 Sahih
+1274 Sahih
+1275 Mauquf Sahih
+1276 Mauquf Sahih
+1277 Mauquf Sahih
+1278 Mauquf Daif
+1279 Mauquf Sahih
+1280 Mauquf Sahih
+1281 Maqtu Sahih
+1282 Maqtu Sahih
+1283 Maqtu Sahih
+1284 Hasan
+1285 Mauquf Sahih
+1286 Mauquf Sahih
+1287 Sahih
+1288 Sahih
+1289 Sahih
+1290 Hasan
+1291 Mauquf Sahih
+1292 Maqtu Sahih
+1293 Mauquf Daif
+1294 Mauquf Daif
+1295 Mauquf Sahih
+1296 Mauquf Daif
+1297 Mauquf Sahih
+1298 Sahih
+1299 Sahih
+1300 Sahih
+1301 Sahih Lighairihi
+1302 Mauquf Sahih
+1303 Sahih
+1304 Sahih
+1305 Sahih Lighairihi
+1306 Maqtu Daif
+1307 Maqtu Sahih
+1308 Maqtu Daif
+1309 Maqtu Sahih
+1310 Sahih Lighairihi
+1311 Sahih
+1312 Sahih
+1313 Sahih
+1314 Sahih
+1315 Sahih Lighairihi
+1316 Daif
+1317 Sahih
+1318 Sahih
+1319 Mauquf Sahih
+1320 Sahih
+1321 Daif
+1322 Mauquf Sahih
+1323 Mauquf Sahih
+1324 Mauquf Daif
+1325 Maqtu Sahih
+1326 Maqtu Sahih
+1327 Sahih
+1328 Maqtu Sahih
+1329 Sahih
+1330 Sahih
+1331 Sahih
+1332 Mauquf Daif
+1333 Mauquf Daif
+1334 Mauquf Daif
+1335 Maqtu Sahih
+1336 Maqtu Sahih
+1337 Maqtu Sahih
+1338 Maqtu Sahih
+1339 Mauquf Sahih
+1340 Mauquf Daif
+1341 Maqtu Sahih
+1342 Maqtu Daif
+1343 Maqtu Sahih
+1344 Maqtu Daif
+1345 Mauquf Daif
+1346 Mauquf Sahih
+1347 Maqtu Daif
+1348 Mauquf Daif
+1349 Mauquf Sahih
+1350 Sahih
+1351 Sahih
+1352 Maqtu Sahih
+1353 Hasan Lighairihi
+1354 Maqtu Sahih
+1355 Maqtu Sahih
+1356 Sahih
+1357 Sahih Lighairihi
+1358 Mauquf Sahih
+1359 Sahih Lighairihi
+1360 Mauquf Daif
+1361 Maqtu Daif
+1362 Sahih Lighairihi
+1363 Sahih
+1364 Sahih
+1365 Sahih Lighairihi
+1366 Mauquf Sahih
+1367 Mauquf Hasan
+1368 Maqtu Sahih
+1369 Sahih
+1370 Maqtu Sahih
+1371 Sahih Lighairihi
+1372 Sahih
+1373 Sahih
+1374 Mauquf Sahih
+1375 Maqtu Daif
+1376 Mauquf Daif
+1377 Mauquf Sahih
+1378 Mauquf Daif
+1379 Sahih
+1380 Sahih
+1381 Sahih
+1382 Sahih
+1383 Maqtu Sahih
+1384 Maqtu Sahih
+1385 Maqtu Sahih
+1386 Mauquf Sahih
+1387 Mauquf Hasan
+1388 Sahih Lighairihi
+1389 Sahih Lighairihi
+1390 Sahih
+1391 Maqtu Sahih
+1392 Maqtu Sahih 
+1393 Mauquf Daif
+1394 Maqtu Sahih
+1395 Sahih
+1396 Maqtu Daif
+1397 Maqtu Daif
+1398 Mauquf Daif
+1399 Sahih
+1400 Mauquf Sahih
+1401 Sahih
+1402 Mauquf Daif
+1403 Mauquf Daif
+1404 Maqtu Daif
+1405 Maqtu Sahih
+1406 Sahih
+1407 Maqtu Sahih 
+1408 Maqtu Daif
+1409 Maqtu Hasan
+1410 Mauquf Sahih
+1411 Sahih
+1412 Sahih
+1413 Mauquf Sahih
+1414 Daif
+1415 Maqtu Sahih
+1416 Sahih Lighairihi
+1417 Mauquf Daif
+1418 Sahih
+1419 Hasan
+1420 Mauquf Sahih
+1421 Sahih
+1422 Mauquf Sahih
+1423 Mauquf Daif
+1424 Mauquf Daif
+1425 Mauquf Sahih
+1426 Mauquf Sahih
+1427 Sahih
+1428 Mauquf Sahih
+1429 Sahih Lighairihi
+1430 Sahih
+1431 Sahih
+1432 Sahih Lighairihi
+1433 Sahih
+1434 Mauquf Daif
+1435 Mauquf Daif
+1436 Sahih
+1437 Sahih
+1438 Mauquf Sahih
+1439 Sahih
+1440 Mauquf Sahih
+1441 Mauquf Sahih
+1442 Mauquf Sahih
+1443 Sahih
+1444 Maqtu Sahih
+1445 Mauquf Sahih
+1446 Sahih
+1447 Mauquf Hasan
+1448 Mauquf Sahih
+1449 Mauquf Sahih
+1450 Mauquf Sahih
+1451 Mauquf Daif
+1452 Daif
+1453 Sahih
+1454 Daif
+1455 Sahih
+1456 Mauquf Daif
+1457 Mauquf Daif
+1458 Sahih
+1459 Sahih
+1460 Mauquf Daif
+1461 Daif
+1462 Mauquf Daif
+1463 Mauquf Sahih
+1464 Sahih
+1465 Sahih
+1466 Maqtu Sahih
+1467 Maqtu Sahih
+1468 Mauquf Sahih
+1469 Mauquf Daif
+1470 Sahih
+1471 Sahih
+1472 Mauquf Daif
+1473 Mauquf Daif
+1474 Maqtu Daif
+1475 Daif
+1476 Mauquf Sahih
+1477 Sahih
+1478 Mauquf Sahih
+1479 Sahih
+1480 Sahih
+1481 Sahih
+1482 Sahih
+1483 Mauquf Sahih لغيره
+1484 Maqtu Daif
+1485 Mauquf Daif
+1486 Maqtu Sahih
+1487 Maqtu Daif
+1488 Maqtu Sahih
+1489 Mauquf Sahih
+1490 Maqtu Daif
+1491 Maqtu Sahih
+1492 Mauquf Daif
+1493 Mauquf Daif
+1494 Maqtu Daif
+1495 Maqtu Sahih
+1496 Maqtu Daif
+1497 Mauquf Sahih
+1498 Maqtu Sahih
+1499 Maqtu Daif
+1500 Sahih
+1501 Daif
+1502 Sahih
+1503 Sahih
+1504 Sahih Lighairihi
+1505 Sahih
+1506 Sahih
+1507 Mauquf Sahih
+1508 Mauquf Sahih
+1509 Mauquf Sahih
+1510 Mauquf Sahih
+1511 Daif
+1512 Mauquf Daif
+1513 Sahih
+1514 Mauquf Daif
+1515 Mauquf Sahih
+1516 Maqtu Sahih
+1517 Maqtu Sahih
+1518 Maqtu Sahih
+1519 Mauquf Daif
+1520 Mauquf Daif
+1521 Sahih
+1522 Hasan
+1523 Mauquf Sahih
+1524 Mauquf Sahih
+1525 Mauquf Sahih
+1526 Mauquf Sahih
+1527 Maqtu Sahih
+1528 Maqtu Daif
+1529 Sahih
+1530 Mauquf Sahih
+1531 Mauquf Daif
+1532 Maqtu Sahih
+1533 Sahih
+1534 Mauquf Sahih
+1535 Mauquf Daif
+1536 Maqtu Sahih
+1537 Mauquf Sahih
+1538 Mauquf Daif
+1539 Mauquf Daif
+1540 Maqtu Sahih
+1541 Sahih
+1542 Sahih
+1543 Sahih Lighairihi
+1544 Sahih
+1545 Sahih
+1546 Sahih Lighairihi
+1547 Sahih
+1548 Sahih
+1549 Sahih
+1550 Mauquf Sahih
+1551 Mauquf Sahih
+1552 Sahih Lighairihi
+1553 Mauquf Daif
+1554 Maqtu Sahih
+1555 Mauquf Daif
+1556 Mauquf Daif
+1557 Maqtu Sahih
+1558 Maqtu Sahih
+1559 Maqtu Sahih
+1560 Maqtu Sahih
+1561 Sahih
+1562 Sahih
+1563 Maqtu Sahih
+1564 Maqtu Sahih
+1565 Daif
+1566 Maqtu Sahih
+1567 Maqtu Sahih
+1568 Maqtu Sahih
+1569 Maqtu Sahih
+1570 Mauquf Daif
+1571 Maqtu Sahih
+1572 Mauquf Sahih
+1573 Mauquf Sahih
+1574 Maqtu Sahih
+1575 Mauquf Sahih
+1576 Maqtu Sahih
+1577 Mauquf Daif
+1578 Maqtu Daif
+1579 Maqtu Sahih
+1580 Maqtu Sahih
+1581 Maqtu Sahih
+1582 Maqtu Sahih
+1583 Maqtu Sahih
+1584 Maqtu Sahih
+1585 Sahih
+1586 Daif
+1587 Maqtu Daif
+1588 Maqtu Sahih
+1589 Sahih
+1590 Mauquf Sahih
+1591 Mauquf Sahih
+1592 Maqtu Sahih
+1593 Mauquf Daif
+1594 Maqtu Sahih
+1595 Mauquf Daif
+1596 Sahih
+1597 Sahih
+1598 Sahih
+1599 Sahih
+1600 Sahih
+1601 Sahih
+1602 Sahih
+1603 Sahih
+1604 Sahih
+1605 Hasan
+1606 Maqtu Daif
+1607 Sahih
+1608 Sahih
+1609 Mauquf Sahih  
+1610 Mauquf Daif
+1611 Sahih
+1612 Sahih
+1613 Sahih
+1614 Sahih Lighairihi
+1615 Sahih Lighairihi
+1616 Sahih
+1617 Maqtu Sahih
+1618 Sahih
+1619 Sahih
+1620 Sahih
+1621 Sahih
+1622 Mauquf Daif
+1623 Sahih
+1624 Daif
+1625 Sahih Lighairihi
+1626 Sahih
+1627 Mauquf Sahih
+1628 Maqtu Sahih
+1629 Sahih
+1630 Sahih
+1631 Maqtu Daif
+1632 Maqtu Daif
+1633 Daif
+1634 Sahih
+1635 Hasan
+1636 Sahih
+1637 Maqtu Sahih
+1638 Hasan
+1639 Maqtu Sahih
+1640 Sahih Lighairihi
+1641 Sahih Lighairihi
+1642 Sahih
+1643 Sahih Lighairihi
+1644 Sahih
+1645 Sahih
+1646 Sahih
+1647 Sahih
+1648 Daif
+1649 Sahih
+1650 Mauquf Sahih
+1651 Sahih
+1652 Mauquf Daif
+1653 Mauquf Sahih
+1654 Sahih
+1655 Sahih
+1656 Mauquf Sahih
+1657 Mauquf Hasan
+1658 Mauquf Sahih
+1659 Sahih
+1660 Sahih
+1661 Sahih
+1662 Sahih
+1663 Sahih
+1664 Sahih
+1665 Sahih
+1666 Sahih
+1667 Maqtu Sahih
+1668 Sahih
+1669 Sahih
+1670 Mauquf Sahih
+1671 Sahih
+1672 Sahih
+1673 Mauquf Sahih
+1674 Maqtu Sahih
+1675 Sahih
+1676 Sahih
+1677 Sahih
+1678 Sahih
+1679 Sahih
+1680 Sahih
+1681 Sahih
+1682 Hasan
+1683 Mauquf Daif
+1684 Mauquf Daif
+1685 Mauquf Sahih
+1686 Mauquf Sahih
+1687 Sahih
+1688 Sahih
+1689 Sahih
+1690 Sahih
+1691 Sahih
+1692 Sahih
+1693 Sahih
+1694 Sahih
+1695 Hasan
+1696 Sahih Lighairihi
+1697 Maqtu Daif
+1698 Sahih
+1699 Mauquf Daif
+1700 Mauquf Sahih
+1701 Mauquf Sahih
+1702 Mauquf Sahih
+1703 Sahih
+1704 Mauquf Sahih
+1705 Maqtu Sahih
+1706 Mauquf Hasan Lighairihi
+1707 Mauquf Hasan Lighairihi
+1708 Sahih
+1709 Maqtu Sahih
+1710 Sahih
+1711 Sahih
+1712 Sahih
+1713 Sahih
+1714 Sahih Lighairihi
+1715 Sahih Lighairihi
+1716 Sahih
+1717 Sahih
+1718 Daif
+1719 Sahih
+1720 Sahih
+1721 Mauquf Daif
+1722 Daif Isnad
+1723 Sahih Lighairihi
+1724 Mauquf Sahih
+1725 Sahih
+1726 Sahih
+1727 Sahih
+1728 Sahih
+1729 Daif
+1730 Sahih
+1731 Sahih
+1732 Sahih
+1733 Mauquf Sahih
+1734 Sahih
+1735 Daif
+1736 Daif
+1737 Mauquf Sahih
+1738 Hasan Lighairihi
+1739 Hasan Lighairihi
+1740 Sahih
+1741 Maqtu Sahih
+1742 Sahih
+1743 Sahih
+1744 Sahih
+1745 Sahih
+1746 Mauquf Daif
+1747 Sahih
+1748 Sahih
+1749 Sahih
+1750 Sahih Lighairihi
+1751 Sahih
+1752 Maqtu Sahih
+1753 Hasan
+1754 Mauquf Hasan
+1755 Mauquf Sahih
+1756 Sahih Lighairihi
+1757 Mauquf Sahih
+1758 Sahih
+1759 Sahih
+1760 Mauquf Sahih
+1761 Mauquf Sahih
+1762 Mauquf Daif
+1763 Daif
+1764 Sahih
+1765 Sahih
+1766 Sahih Lighairihi
+1767 Mauquf Sahih
+1768 Sahih
+1769 Sahih
+1770 Sahih
+1771 Daif
+1772 Sahih
+1773 Sahih
+1774 Sahih
+1775 Sahih
+1776 Sahih
+1777 Sahih
+1778 Sahih
+1779 Sahih
+1780 Sahih
+1781 Mauquf Sahih
+1782 Sahih
+1783 Sahih
+1784 Shaza
+1785 Sahih Lighairihi
+1786 Sahih Lighairihi
+1787 Mauquf Daif
+1788 Sahih
+1789 Daif 
+1790 Sahih Lighairihi
+1791 Sahih
+1792 Mauquf Daif
+1793 Sahih
+1794 Sahih
+1795 Sahih
+1796 Sahih Lighairihi
+1797 Sahih
+1798 Hasan
+1799 Daif
+1800 Sahih
+1801 Sahih Lighairihi
+1802 Sahih
+1803 Sahih
+1804 Mauquf Daif
+1805 Mauquf Sahih
+1806 Sahih
+1807 Mauquf Daif
+1808 Sahih
+1809 Sahih
+1810 Mauquf Sahih
+1811 Sahih
+1812 Sahih
+1813 Sahih
+1814 Maqtu Sahih
+1815 Sahih
+1816 Mauquf Sahih
+1817 Sahih
+1818 Maqtu Daif
+1819 Mauquf Daif
+1820 Sahih Lighairihi
+1821 Daif
+1822 Mauquf Sahih
+1823 Sahih
+1824 Sahih
+1825 Daif
+1826 Mauquf Daif
+1827 Maqtu Sahih Lighairihi
+1828 Mauquf Daif
+1829 Daif
+1830 Sahih
+1831 Sahih
+1832 Sahih Lighairihi
+1833 Maqtu Sahih
+1834 Mauquf Sahih
+1835 Maqtu Hasan
+1836 Mauquf Sahih
+1837 Sahih
+1838 Sahih
+1839 Sahih
+1840 Mauquf Sahih
+1841 Sahih
+1842 Sahih
+1843 Daif
+1844 Hasan Lighairihi
+1845 Mauquf Daif
+1846 Mauquf Daif
+1847 Sahih
+1848 Sahih
+1849 Sahih
+1850 Sahih
+1851 Sahih
+1852 Sahih
+1853 Sahih
+1854 Daif
+1855 Mauquf Sahih
+1856 Maqtu Daif
+1857 Mauquf Sahih
+1858 Sahih
