@@ -26,6 +26,9 @@ hasan isnaad
 isnaad sahih
 isnaad sahih
 isnaad malool
+isnaad sahih
+isnaad daif
+isnaad daif
 hasan or sahih
 sahih lighairihi
 daif
@@ -34,7 +37,6 @@ sahih muquf
 daif maqtu
 daif muquf
 sahih matn
-isnaad daif
 sahih bukhari
 sanad malool
 isnaad hasan
