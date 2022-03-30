@@ -19,10 +19,12 @@ async function test(){
             if(arr[i].length>2)
             console.log('issue')
             for(let grade of gradesarr){
+                try{
                 if(arr[i][1].includes(grade)){
                     arr[i][1] = grade
                     break;
                 }
+            }catch(e){}
             }
             
         }
