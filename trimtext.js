@@ -11,7 +11,7 @@ async function test(){
 
     for(let file of files){
       let filePath = path.join(mypath,file)
-        let str = fs.readFileSync(filePath).toString()
+        let str = fs.readFileSync(filePath).toString().normalize("NFD").replace(/\p{Diacritic}/gu, "")
         let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 
         //console.log(file,arr.slice(0,10))
