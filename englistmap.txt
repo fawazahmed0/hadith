@@ -29,6 +29,7 @@ isnaad malool
 isnaad sahih
 isnaad daif
 isnaad daif
+isnaad hasan
 hasan or sahih
 sahih lighairihi
 daif
