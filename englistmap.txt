@@ -25,6 +25,7 @@ sahih Mutawatir
 hasan isnaad
 isnaad sahih
 isnaad sahih
+isnaad malool
 hasan or sahih
 sahih lighairihi
 daif
@@ -35,6 +36,7 @@ daif muquf
 sahih matn
 isnaad daif
 sahih bukhari
+sanad malool
 isnaad hasan
 hasan lighairihi
 daif munqar
@@ -49,10 +51,13 @@ very daif
 mawdu
 maqtu
 Lied
+mauquf
+daif
 daif
 daif
 munqar
 hasan
 shaza
+mursal
 sahih
 sahih
