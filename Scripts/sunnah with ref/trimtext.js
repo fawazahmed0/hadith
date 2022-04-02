@@ -11,7 +11,7 @@ async function test(){
 
     for(let file of files){
       let filePath = path.join(mypath,file)
-        let str = fs.readFileSync(filePath).toString() //.replace(/(\d+ \|)\s+\,\s+/g,'$1 ')
+        let str = fs.readFileSync(filePath).toString() .replace(/(\d+ \|)\s+\,\s?/g,'$1 ')
         let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 
         //console.log(file,arr.slice(0,10))
