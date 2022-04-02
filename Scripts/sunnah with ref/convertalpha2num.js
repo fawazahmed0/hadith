@@ -15,8 +15,8 @@ async function test(){
         let no  = 97
     
         for (var i = no; i <= no+26; i++) {
-            let reg = new RegExp('(\d+)'+String.fromCharCode(i)+' (\|)','g')
-            str = str.replace(reg,'$1.'+(i-no+1)+' $2')
+            let reg = new RegExp('(\\d+)'+String.fromCharCode(i)+' (\|)','g')
+            str = str.replace(reg,'\n$1.'+(i-no+1)+' $2')
         }
         fs.writeFileSync(filePath,str)
     }
