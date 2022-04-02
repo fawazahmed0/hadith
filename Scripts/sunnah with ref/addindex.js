@@ -12,7 +12,7 @@ async function test(){
     for(let file of files){
       let filePath = path.join(mypath,file)
         let str = fs.readFileSync(filePath).toString()
-        str = str.replace(/(^.*?)\r?\nReference.*?(\d+).*?\r?\n/mg,'$2 | $1')
+        str = str.replace(/(^.*?)\r?\nReference.*?(\d+[a-z]?).*?\r?\n/mg,'$2 | $1')
         fs.writeFileSync(filePath,str)
     }
 }
