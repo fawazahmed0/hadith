@@ -1,19 +1,22 @@
 const fs = require('fs');
+const path = require('path');
 
-
-let str = fs.readFileSync('incrementer.txt').toString()
+let filePath = path.join(__dirname,'..','sunnah with ref','scrapped','malikarabicscrapped.txt')
+let str = fs.readFileSync(filePath).toString()
+let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 let bool = false
-for(let text of str.match(/Arabic ref.*?Hadith\s+\d+/gi)){
-
-    if(text.includes('Hadith 295'))
+for(let i=0 ;i<arr.length;i++){
+    let num = 29
+    let offset = 1
+    if(arr[i].includes(num+' | '))
     bool=true
 
-    if(bool){
-       let num= text.split(' ').slice(-1)[0]-2
-        str = str.replace(text,text.split(' ').slice(0,-1).join(' ')+' '+num)
-    }
+    if(bool)
+        arr[i]= (arr[i].split(' | ')[0]-offset)+' | '+arr[i].split(' | ')[1]
+        
+    
        
 
 }
 
-fs.writeFileSync('incrementer2.txt',str)
+fs.writeFileSync(filePath,arr.join('\n').trim())
