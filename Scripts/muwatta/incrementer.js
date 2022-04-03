@@ -6,8 +6,8 @@ let str = fs.readFileSync(filePath).toString()
 let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 let bool = false
 for(let i=0 ;i<arr.length;i++){
-    let num = 29
-    let offset = 1
+    let num = 295
+    let offset = 2
     if(arr[i].includes(num+' | '))
     bool=true
 
