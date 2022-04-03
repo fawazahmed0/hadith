@@ -11,7 +11,7 @@ async function test(){
       let filePath = path.join(mypath,file)
         let str = fs.readFileSync(filePath).toString()
         str = str.replace(/\r?\n/g,'')
-        str = str.replace(/(\d+)\s+\|\s+/g,'\n$1 | ')
+        str = str.replace(/(\d+[a-z]?)\s+\|\s+/g,'\n$1 | ')
         fs.writeFileSync(filePath,str.trim())
     }
 }
