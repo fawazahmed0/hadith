@@ -27,9 +27,7 @@ async function test(){
             if(!res.ok)
             console.log("issue with val",val)
             let data = await res.json()
-            //let hadithno = data.hits.hits[0]._source.column1
-            console.log(data.hits)
-            break
+            let hadithno = data.hits.hits[0]._source.column1
             let hadith = val.id
             arr.push(hadithno+' | '+hadith.trim())
             }catch(e){console.error(e)}
