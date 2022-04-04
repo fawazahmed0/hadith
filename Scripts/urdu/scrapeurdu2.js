@@ -7,12 +7,12 @@ let browser
 async function test(){
 
     let hadithlinks = [
-     //  'https://muhammad.pk/sahih-bukhari-',
+       'https://muhammad.pk/sahih-bukhari-',
        'https://muhammad.pk/sahih-muslim-',
-    //   'https://muhammad.pk/sunan-abu-dawood-',
-      //   'https://muhammad.pk/sunan-ibn-majah-',
-        //    'https://muhammad.pk/sunan-an-nasai-',
-         //   'https://muhammad.pk/jami-at-tirmidhi-',
+       'https://muhammad.pk/sunan-abu-dawood-',
+         'https://muhammad.pk/sunan-ibn-majah-',
+            'https://muhammad.pk/sunan-an-nasai-',
+           'https://muhammad.pk/jami-at-tirmidhi-',
    ]
 
     browser = await chromium.launch({ headless: true});
@@ -29,7 +29,8 @@ async function second(link){
     let page = await context.newPage();
     let arabicarr= []
     let urduarr = []
-    for(let i=4679;;i++){
+    let count = 0
+    for(let i=1;;i++){
         
     let res;   
     try{
@@ -37,9 +38,14 @@ async function second(link){
     }catch(e){
         res = await page.goto(link+i,{timeout:60000});
     }
-    if(!res.ok())
+    if(!res.ok()){
+    count++;
+    continue
+    }else
+      count=0
+    
+    if(count>10)
     break
-
     try{
     let arabictext = await page.locator('h5').textContent()
     arabicarr.push(i+' | '+arabictext.replace(/\s\s+/g, ' ').trim())
