@@ -45,7 +45,7 @@ async function test(){
             recursive: true
           });
 
-          fs.writeFileSync(path.join(mypath,i+'.txt'),contentArr[i].map(e=>e.replace(/\r?\n/g,' ').replace(/\s\s+/g, ' ').trim()).join('\n').trim())
+          fs.writeFileSync(path.join(mypath,i+'.txt'),contentArr[i].map(e=> (typeof e=="string") ? e.replace(/\r?\n/g,' ').replace(/\s\s+/g, ' ').trim():'').join('\n').trim())
     }
 
  
