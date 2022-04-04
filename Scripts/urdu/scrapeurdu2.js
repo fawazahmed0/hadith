@@ -4,27 +4,31 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path')
 let browser
+let hadithnames =['bukhari','muslim','abudawud','ibnmajah','nasai','tirmidhi']
+let hadithlinks = [
+  'https://muhammad.pk/sahih-bukhari-',
+  'https://muhammad.pk/sahih-muslim-',
+  'https://muhammad.pk/sunan-abu-dawood-',
+    'https://muhammad.pk/sunan-ibn-majah-',
+       'https://muhammad.pk/sunan-an-nasai-',
+      'https://muhammad.pk/jami-at-tirmidhi-',
+]
 async function test(){
 
-    let hadithlinks = [
-       'https://muhammad.pk/sahih-bukhari-',
-       'https://muhammad.pk/sahih-muslim-',
-       'https://muhammad.pk/sunan-abu-dawood-',
-         'https://muhammad.pk/sunan-ibn-majah-',
-            'https://muhammad.pk/sunan-an-nasai-',
-           'https://muhammad.pk/jami-at-tirmidhi-',
-   ]
+ 
+
+ 
 
     browser = await chromium.launch({ headless: true});
    let promiseArr = []
-    hadithlinks.forEach(link => promiseArr.push(second(link)))
+    hadithlinks.forEach((link,index) => promiseArr.push(second(link,index)))
     await Promise.all(promiseArr)
    await browser.close()
 
 }
 
 
-async function second(link){
+async function second(link,indexno){
     let context = await browser.newContext();
     let page = await context.newPage();
     let arabicarr= []
@@ -66,8 +70,8 @@ fs.mkdirSync(mypath, {
     recursive: true
   });
 
-  fs.writeFileSync(path.join(mypath,'1ara'+link.split('/').slice(-1)[0]+'.txt'),arabicarr.join('\n').trim())
-  fs.writeFileSync(path.join(mypath,'1urdu'+link.split('/').slice(-1)[0]+'.txt'),urduarr.join('\n').trim())
+  fs.writeFileSync(path.join(mypath,hadithnames[0]+'arabic.txt'),arabicarr.join('\n').trim())
+  fs.writeFileSync(path.join(mypath,hadithnames[0]+'urdu.txt'),urduarr.join('\n').trim())
 
 }
 
