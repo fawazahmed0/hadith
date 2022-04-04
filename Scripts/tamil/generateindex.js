@@ -1,7 +1,7 @@
 var fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
-let bookArr = ['bukhari']
+let bookArr = ['muslim']
 async function test(){
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
@@ -9,12 +9,12 @@ async function test(){
    // let files = fs.readdirSync(mypath)
 
 
-      let middlename = 'arabic'
+      let middlename = ''
     for(let file of bookArr){
         let indexname = file + middlename+'scrapped3'
 
       let filePath1 = path.join(mypath,file+'tamil.txt')
-      let filePath2 = path.join(mypath,file+'arabic.txt')
+      let filePath2 = path.join(mypath,file+'english.txt')
         let arr1 = fs.readFileSync(filePath1).toString().trim().split(/\r?\n/)
         let arr2 = fs.readFileSync(filePath2).toString().trim().split(/\r?\n/)
         let arr = []
