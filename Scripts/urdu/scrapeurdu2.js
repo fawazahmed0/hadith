@@ -70,8 +70,8 @@ fs.mkdirSync(mypath, {
     recursive: true
   });
 
-  fs.writeFileSync(path.join(mypath,hadithnames[0]+'arabic.txt'),arabicarr.join('\n').trim())
-  fs.writeFileSync(path.join(mypath,hadithnames[0]+'urdu.txt'),urduarr.join('\n').trim())
+  fs.writeFileSync(path.join(mypath,hadithnames[indexno]+'arabic.txt'),arabicarr.join('\n').trim())
+  fs.writeFileSync(path.join(mypath,hadithnames[indexno]+'urdu.txt'),urduarr.join('\n').trim())
 
 }
 
