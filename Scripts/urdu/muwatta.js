@@ -11,9 +11,9 @@ let contentArr = [[],[],[]]
 
 async function test(){
 
-    const browser = await chromium.launch({ headless: true});
-    const context = await browser.newContext();
-    const page = await context.newPage();
+    let browser = await chromium.launch({ headless: true});
+     let context = await browser.newContext();
+     let page = await context.newPage();
 
     let link = 'http://www.hadithurdu.com/08/8-1-'
     let count = 0
