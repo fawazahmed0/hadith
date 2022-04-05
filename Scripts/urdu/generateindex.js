@@ -27,7 +27,7 @@ async function test(){
               let jsonval = {
                 "query": {
                   "match": {
-                    "column2": arr2[i].split(' | ')[1]
+                    "column2": arr2[i].replace(/^\d+\s+\|/,' ').trim()
                   }
                 }
               }
@@ -50,7 +50,7 @@ async function test(){
          //   lasthadithno = hadithno
             }catch(e){console.error(e)}
             //console.log('hadith no is',hadithno)
-            arr.push(hadithno+' | '+arr1[i].split(' | ')[1])
+            arr.push(hadithno+' | '+arr1[i].replace(/^\d+\s+\|/,' ').trim())
         }
 
         fs.writeFileSync(path.join(mypath,'..',file+'.txt'),arr.join('\n').trim())
