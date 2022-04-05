@@ -19,9 +19,9 @@ async function test(){
     let pagelinks = [
         'https://www.hadithbd.com/hadith/chapter/?book=4','https://www.hadithbd.com/hadith/chapter/?book=19',
     'https://www.hadithbd.com/hadith/chapter/?book=65','https://www.hadithbd.com/hadith/chapter/?book=9',
-'https://www.hadithbd.com/hadith/chapter/?book=29']
+'https://www.hadithbd.com/hadith/chapter/?book=29','https://www.hadithbd.com/hadith/chapter/?book=12','https://www.hadithbd.com/hadith/chapter/?book=22']
 
-let pagehadiths = ['dawud','tirmidhi','nasai','majah','muwatta']
+let pagehadiths = ['abudawud','tirmidhi','nasai','ibnmajah','malik','bukhari','muslim']
 
 for(let k=0;k<pagelinks.length;k++){
 
