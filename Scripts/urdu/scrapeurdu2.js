@@ -35,6 +35,8 @@ async function second(link,indexno){
     let urduarr = []
     let count = 0
     for(let i=1;;i++){
+      if(count>10)
+      break
         
     let res;   
     try{
@@ -48,8 +50,7 @@ async function second(link,indexno){
     }else
       count=0
     
-    if(count>10)
-    break
+
     try{
     let arabictext = await page.locator('h5').textContent()
     arabicarr.push(i+' | '+arabictext.replace(/\s\s+/g, ' ').trim())

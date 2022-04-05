@@ -18,6 +18,14 @@ async function test(){
     let link = 'http://www.hadithurdu.com/08/8-1-'
     let count = 0
     for(let i=1;;i++){
+        if(count>10)
+        break
+        if(i%1000==0){
+            await context.close()
+            context = await browser.newContext();
+            page = await context.newPage();
+       }
+       console.log(i)
         try{
         let res = await page.goto(link+i,{timeout:60000});
         if(!res.ok())
@@ -26,8 +34,7 @@ async function test(){
                 continue
             }else
             count=0;
-            if(count>10)
-            break
+
         
         let arabic = await page.locator('.arabic-hadith').textContent()
         let english = await page.locator('.english-hadith').textContent()
