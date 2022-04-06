@@ -44,18 +44,31 @@ async function test(){
                 nextRefVal = parseFloat( arr[i-1].match(/\d+\.?\d*/)[0])
                 diff = refVal - nextRefVal
                 }catch(e){continue}
+                let countJ = 0
                 for(let j=i-2;j>i-10 && diff==1 ;j--){
                     try{
                         let currentVal = parseFloat( arr[j].match(/\d+\.?\d*/)[0])
-                        if(Math.abs(refVal-currentVal)>10+(i-j)){
-                            let newVal = refVal - (i-j)
+                        let confirm = false
+                        let countK = -1;
+                        for(let k=j-1;k>j-10;k--){
+                            let prevVal = parseFloat( arr[k].match(/\d+\.?\d*/)[0])
+                            countK++;
+                            if(refVal-prevVal==countK+countJ+3){
+                                console.log('confirm is true')
+                                confirm = true
+                                break
+                            }
+                        }
+
+                        if(Math.abs(refVal-currentVal)>15+countJ && confirm){
+                            let newVal = refVal - (countJ + 2)
                             arr[j] = newVal + arr[j].replace(/\d+\.?\d*/,'')
                         }
 
                     
                     
                     }catch(e){}
-
+                    countJ++
                 }
                
             }
