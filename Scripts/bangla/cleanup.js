@@ -11,7 +11,7 @@ async function test(){
 
     for(let file of files){
         console.log(file)
-        if(!file.includes('nasai.txt'))
+        if(!file.includes('muslim.txt'))
         continue
       let filePath = path.join(mypath,file)
         let str = fs.readFileSync(filePath).toString()
