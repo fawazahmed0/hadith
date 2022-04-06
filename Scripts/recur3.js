@@ -26,7 +26,7 @@ async function test(){
 
         for(let [key,value] of Object.entries(lasthadithObj)){
             if(filePath.includes(key)){
-                if(arr.slice(-1)[0].match(/\d+/)[0] !=value){
+                if(arr.slice(-1)[0].match(/\d+\.?\d*/)[0] !=value){
                     console.log("wrong last hadith no with "+filePath)
                     continue
                 }
