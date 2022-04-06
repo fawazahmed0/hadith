@@ -1,7 +1,7 @@
 let path = require('path');
 let fs = require('fs');
 
-// Fix numbering
+// Fix numbering, advanced version
 
 let filesArr  = []
 
