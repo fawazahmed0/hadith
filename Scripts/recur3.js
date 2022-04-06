@@ -23,18 +23,18 @@ async function test(){
 
         let str = fs.readFileSync(filePath).toString()
         let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
-
-        for(let [key,value] of Object.entries(lasthadithObj)){
-            if(filePath.includes(key)){
-                if(arr.slice(-1)[0].match(/\d+\.?\d*/)[0] !=value){
-                    console.log("wrong last hadith no with "+filePath)
+        
+      //  for(let [key,value] of Object.entries(lasthadithObj)){
+      //      if(filePath.includes(key)){
+      //          if(arr.slice(-1)[0].match(/\d+\.?\d*/)[0] !=value){
+      /*              console.log("wrong last hadith no with "+filePath)
                     continue
                 }
 
             }
 
         }
-
+        */
 
 
             for(let i=arr.length;i>0;i--){
