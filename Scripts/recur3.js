@@ -48,7 +48,8 @@ async function test(){
                     try{
                         let currentVal = parseFloat( arr[j].match(/\d+\.?\d*/)[0])
                         if(refVal-currentVal>10+j-i+2){
-                            let newVal = refVal - i-j
+                            let newVal = refVal - (i-j)
+                            console.log(newVal)
                             arr[j] = newVal + arr[j].replace(/\d+\.?\d*/,'')
                         }
 
