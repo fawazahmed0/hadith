@@ -20,7 +20,7 @@ async function test(){
                 let currentVal = parseFloat( arr[i].match(/\d+\.?\d*/)[0])
                 let nextVal = parseFloat( arr[i+1].match(/\d+\.?\d*/)[0])
 
-                if(Math.abs(prevVal - currentVal) > 10 && Math.abs(currentVal - nextVal) > 10 && Math.abs(prevVal - nextVal)<10 ){
+                if(Math.abs(prevVal - currentVal) > 10 && Math.abs(currentVal - nextVal) > 10 && nextVal-prevVal<10 ){
 
                     arr[i] = ''
                 }
