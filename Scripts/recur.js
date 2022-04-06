@@ -10,8 +10,28 @@ async function test(){
     
     for(let filePath of filesArr){
 
+        if(filePath.includes('compiled')){
+            let str = fs.readFileSync(filePath).toString()
+            let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 
-        
+            for(let i=0;i<arr.length;i++){
+                try{
+                let prevVal = arr[i-1].match(/\d+\.?\d*/)[0]
+                let currentVal = arr[i].match(/\d+\.?\d*/)[0]
+                let nextVal = arr[i+1].match(/\d+\.?\d*/)[0]
+
+                if(Math.abs(prevVal - currentVal) > 10 && Math.abs(currentVal - nextVal) > 10){
+                    currentVal = (prevVal + nextVal)/2
+                    arr[i] = currentVal + arr[i].replace(/\d+\.?\d*/,'')
+                }
+                    
+            }catch(e){}
+            }
+            fs.writeFileSync(filePath,arr.join('\n').trim())
+        }
+
+
+
     }
 
 }
