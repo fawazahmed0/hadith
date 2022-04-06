@@ -16,8 +16,8 @@ async function test(){
             let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 
             for(let i=0;i<arr.length;i++){
-                if(arr[i].split('|').slice(1).join(' ').trim()=='')
-                arr[i] = ''
+                
+                arr[i] = arr[i].replace(/\s\s+/g, ' ')
             }
             fs.writeFileSync(filePath,arr.filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim()).join('\n').trim())
         
