@@ -38,9 +38,12 @@ async function test(){
 
 
             for(let i=arr.length;i>0;i--){
-                let refVal = parseFloat( arr[i].match(/\d+\.?\d*/)[0])
-                let nextRefVal = parseFloat( arr[i-1].match(/\d+\.?\d*/)[0])
-                let diff = refVal - nextRefVal
+                let diff,refVal,nextRefVal;
+                try{
+                refVal = parseFloat( arr[i].match(/\d+\.?\d*/)[0])
+                nextRefVal = parseFloat( arr[i-1].match(/\d+\.?\d*/)[0])
+                diff = refVal - nextRefVal
+                }catch(e){continue}
                 for(let j=i-2;j>i-10 && diff==1 ;j--){
                     try{
                         let currentVal = parseFloat( arr[j].match(/\d+\.?\d*/)[0])
