@@ -45,13 +45,13 @@ async function test(){
                 diff = refVal - nextRefVal
                 }catch(e){continue}
                 let countJ = 0
-                for(let j=i-2;j>i-10 && diff==1 ;j--){
+                for(let j=i-2;j>i-20 && diff==1 ;j--){
                     try{
                         let currentVal = parseFloat( arr[j].match(/\d+\.?\d*/)[0])
                         let confirm = false
                         let countK = -1;
                         // previous values for confirmation
-                        for(let k=j-1;k>j-10;k--){
+                        for(let k=j-1;k>j-20;k--){
                             let prevVal = parseFloat( arr[k].match(/\d+\.?\d*/)[0])
                             countK++;
                             if(refVal-prevVal==countK+countJ+3){
