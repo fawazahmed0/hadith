@@ -33,7 +33,6 @@ for(let k=0;k<pagelinks.length;k++){
     let links = await page.evaluate(() => Array.from(document.querySelectorAll('a[href*="section="]')).map(e=>e.href))
 
 
-    let count = 0
 
   for(let link of links){
       await page.goto(link,{timeout:60000});
