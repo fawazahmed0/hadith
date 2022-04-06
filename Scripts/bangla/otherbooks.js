@@ -38,7 +38,10 @@ for(let k=0;k<pagelinks.length;k++){
   for(let link of links){
       await page.goto(link,{timeout:60000});
       while(true){
-      await page.evaluate(() => Array.from(document.querySelectorAll('[lang="ar"]')).map(e=>e.remove()))
+        await page.evaluate(() => Array.from(document.querySelectorAll('[lang="ar"]')).map(e=>e.remove()))
+        await page.evaluate(() => Array.from(document.querySelectorAll('[dir="rtl"]')).map(e=>e.remove()))
+        await page.evaluate(() => Array.from(document.querySelectorAll('.alert-secondary')).map(e=>e.remove()))
+        await page.evaluate(() => Array.from(document.querySelectorAll('.alert-info')).map(e=>e.remove()))
       let contentArr = await page.evaluate(() =>
       Array.from(
           document.querySelectorAll('.tab-content')).map(
