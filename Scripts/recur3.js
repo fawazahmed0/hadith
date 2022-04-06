@@ -50,11 +50,11 @@ async function test(){
                         let currentVal = parseFloat( arr[j].match(/\d+\.?\d*/)[0])
                         let confirm = false
                         let countK = -1;
+                        // previous values for confirmation
                         for(let k=j-1;k>j-10;k--){
                             let prevVal = parseFloat( arr[k].match(/\d+\.?\d*/)[0])
                             countK++;
                             if(refVal-prevVal==countK+countJ+3){
-                                console.log('confirm is true')
                                 confirm = true
                                 break
                             }
