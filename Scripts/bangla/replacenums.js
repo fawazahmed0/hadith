@@ -12,7 +12,7 @@ async function test(){
         let str = fs.readFileSync(filePath).toString()
         let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
         for(let i=0;i<arr.length;i++){
-            arr[i] = arr[i].split(' | ')[0].trim() + ' | ' + arr[i].split(' | ').slice(1).join(' ').replace(/^[০-৯]+\./mg,"").trim()
+            arr[i] = arr[i].split('|')[0].trim() + ' | ' + arr[i].split('|').slice(1).join(' ').replace(/^[০-৯]+\./mg,"").trim()
         }
         fs.writeFileSync(filePath,arr.join('\n').trim())
     }
