@@ -22,6 +22,7 @@ async function test(){
 
                 if(Math.abs(prevVal - currentVal) > 10 && Math.abs(currentVal - nextVal) > 10){
                     currentVal = (prevVal + nextVal)/2
+                    currentVal = Number.isInteger(currentVal) ? currentVal : currentVal.toFixed(1)
                     arr[i] = currentVal + arr[i].replace(/\d+\.?\d*/,'')
                 }
                     
