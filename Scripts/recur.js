@@ -16,11 +16,11 @@ async function test(){
 
             for(let i=0;i<arr.length;i++){
                 try{
-                let prevVal = parseFloat( arr[i-1].match(/\d+\.?\d*/)[0] )
+                let prevVal = parseFloat( arr[i-2].match(/\d+\.?\d*/)[0] )
                 let currentVal = parseFloat( arr[i].match(/\d+\.?\d*/)[0])
-                let nextVal = parseFloat( arr[i+1].match(/\d+\.?\d*/)[0])
+                let nextVal = parseFloat( arr[i+2].match(/\d+\.?\d*/)[0])
 
-                if(Math.abs(prevVal - currentVal) > 10 && Math.abs(currentVal - nextVal) > 10 && Math.abs(prevVal - nextVal)<5 ){
+                if(Math.abs(prevVal - currentVal) > 10 && Math.abs(currentVal - nextVal) > 10 && Math.abs(prevVal - nextVal)<7 ){
                     currentVal = (prevVal + nextVal)/2
                     currentVal = Number.isInteger(currentVal) ? currentVal : currentVal.toFixed(1)
                     arr[i] = currentVal + arr[i].replace(/\d+\.?\d*/,'')
