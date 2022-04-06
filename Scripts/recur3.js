@@ -47,7 +47,7 @@ async function test(){
                 for(let j=i-2;j>i-10 && diff==1 ;j--){
                     try{
                         let currentVal = parseFloat( arr[j].match(/\d+\.?\d*/)[0])
-                        if(refVal-currentVal>10+j-i+2){
+                        if(Math.abs(refVal-currentVal)>10+(i-j)){
                             let newVal = refVal - (i-j)
                             arr[j] = newVal + arr[j].replace(/\d+\.?\d*/,'')
                         }
