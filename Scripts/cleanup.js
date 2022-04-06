@@ -10,13 +10,14 @@ async function test(){
     
     for(let filePath of filesArr){
 
-        if(!filePath.includes('turkish') || !filePath.includes('compiled'))
+        if( !filePath.includes('compiled'))
             continue
             let str = fs.readFileSync(filePath).toString()
             let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 
             for(let i=0;i<arr.length;i++){
-                arr[i] = arr[i].replace(/(\d+.?\d*\s+\|\s+)\d+\-\)/mg, '$1')
+                if(arr[i].split('|').slice(1).join(' ').trim()=='')
+                arr[i] = ''
             }
             fs.writeFileSync(filePath,arr.filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim()).join('\n').trim())
         
