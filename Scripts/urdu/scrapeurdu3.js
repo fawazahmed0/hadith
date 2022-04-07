@@ -41,7 +41,7 @@ async function second(link,indexno){
         res = await page.goto(link+i,{timeout:60000});
     }
     try{
-      await page.waitForSelector('text=Arabic Hadees Number')
+      await page.waitForSelector('text=Arabic Hadees Number',{timeout:10000})
     }catch(e){
       count++;
       continue
@@ -53,19 +53,20 @@ async function second(link,indexno){
 
     try{
     let num = await page.locator('text=Arabic Hadees Number').textContent()
-    let arabictext = await page.locator('content-arb-1').textContent()
-    arabicarr.push(num+' | '+arabictext.replace(/\s\s+/g, ' ').trim())
-    let urdutext = await page.locator('content-urd-1').textContent()
-    urduarr.push(num+' | '+urdutext.replace(/\s\s+/g, ' ').trim())
-    let engtext = await page.locator('content-eng-1').textContent()
-    engarr.push(num+' | '+engtext.replace(/\s\s+/g, ' ').trim())
+    let arabictext = await page.locator('#content-arb-'+i).textContent()
+    arabicarr.push(num+' | '+arabictext.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    let urdutext = await page.locator('#content-urd-'+i).textContent()
+    urduarr.push(num+' | '+urdutext.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    let engtext = await page.locator('#content-eng-'+i).textContent()
+    engarr.push(num+' | '+engtext.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
     }catch(e){}
-    if(i%100==0){
+    if(i%300==0){
          await context.close()
          context = await browser.newContext();
          page = await context.newPage();
     }
-
+    if(i==3)
+break;
 
 }
 
