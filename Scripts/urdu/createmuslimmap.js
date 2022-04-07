@@ -11,11 +11,22 @@ async function test(){
       let filePath = path.join(mypath,file)
         let str = fs.readFileSync(filePath).toString()
         let myarr = str.matchAll(/^\s*Hadees Number\:\s*(\d+) \/ Arabic Hadees No\. (\d+)/mg)
-        myarr = [...myarr].map(e=>({hadithNo:e[1],arabicNo:e[2]}))
+        myarr = [...myarr].map(e=>[e[1],e[2]])
+        let duplicates = myarr.map(e=>e[1]).filter((e, i, a) => a.indexOf(e) !== i) 
+        for(let val of duplicates){
+          let count = 1
+          for(let i=0;i<myarr.length;i++){
+            if(parseInt(myarr[i][1])==parseInt(val)){
+              myarr[i][1] = parseInt(myarr[i][1]) +parseFloat(count*0.1)
+              count++;
+            }
+          }
+
+        }
         //console.log(myarr[2])
         //let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem))
         // arr.sort((a, b) => parseInt(a.match(/\d+/)[0]) - parseInt(b.match(/\d+/)[0]))
-        fs.writeFileSync(path.join(__dirname,'muslimmapping.json'),JSON.stringify(myarr, null, 4))
+        fs.writeFileSync(path.join(__dirname,'muslimmappingdot.txt'),myarr.map(e=>e[0]+' | '+e[1]).join('\n'))
     }
 }
 test()
