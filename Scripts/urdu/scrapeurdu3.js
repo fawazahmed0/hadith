@@ -41,10 +41,12 @@ async function second(link,indexno){
      res = await page.goto(link+i+'/0',{timeout:60000});
     }catch(e){
         res = await page.goto(link+i+'/0',{timeout:60000});
+        console.error(e)
     }
     try{
-      await page.waitForSelector('text=Arabic Hadees Number',{timeout:10000})
+      await page.waitForSelector('text=/Hadees Number: \\d+ / Arabic Hadees No. \\d+/',{timeout:20000})
     }catch(e){
+      console.error(e)
       count++;
       continue
 
@@ -55,17 +57,17 @@ async function second(link,indexno){
 
     try{
       
-    let num = await page.locator('.container :text("Arabic Hadees Number")').allTextContents()
+    let num = await page.locator('.container >> text=/Hadees Number: \\d+ / Arabic Hadees No. \\d+/').allTextContents()
     let arabictextArr = await page.locator('.container [id^="content-arb-"]').allTextContents()
-    arabictextArr = arabictextArr.map(e=>num+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    arabictextArr = arabictextArr.map((e,i)=>num[i]+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
     arabicarr = arabicarr.concat(arabictextArr)
     let urdutextArr = await page.locator('.container [id^="content-urd-"]').allTextContents()
-    urdutextArr = urdutextArr.map(e=>num+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    urdutextArr = urdutextArr.map((e,i)=>num[i]+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
     urduarr = urduarr.concat(urdutextArr)
     let engtextArr = await page.locator('.container [id^="content-eng-"]').allTextContents()
-    engtextArr = engtextArr.map(e=>num+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    engtextArr = engtextArr.map((e,i)=>num[i]+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
     engarr = engarr.concat(engtextArr)
-    }catch(e){}
+    }catch(e){console.error(e)}
     if(i%300==0){
          await context.close()
          context = await browser.newContext();
@@ -74,6 +76,8 @@ async function second(link,indexno){
 
 
 }
+
+await context.close()
 
 let mypath = path.join(__dirname,'hadith2')
 fs.mkdirSync(mypath, {
