@@ -68,7 +68,7 @@ async function second(link,indexno){
     engtextArr = engtextArr.map((e,i)=>num[i]+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
     engarr = engarr.concat(engtextArr)
     }catch(e){console.error(e)}
-    if(i%300==0){
+    if(i%100==0){
          await context.close()
          context = await browser.newContext();
          page = await context.newPage();
