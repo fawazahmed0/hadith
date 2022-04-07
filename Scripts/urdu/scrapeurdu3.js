@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path')
 let browser
-let hadithnames =['muslim','bukhari','abu-dawood','ibn-e-maja','nisai','tirmazi']
+let hadithnames =['ibn-e-maja','nisai','tirmazi','muslim','bukhari','abu-dawood']
 
 let mainLink = 'https://www.al-hadees.com/hadees/'
 let hadithlinks = hadithnames.map(e=>mainLink+e+'/')
