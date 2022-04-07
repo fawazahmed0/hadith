@@ -65,8 +65,7 @@ async function second(link,indexno){
          context = await browser.newContext();
          page = await context.newPage();
     }
-    if(i==3)
-break;
+
 
 }
 
