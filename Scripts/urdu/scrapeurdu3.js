@@ -16,7 +16,9 @@ async function test(){
 
     browser = await chromium.launch({ headless: true});
    let promiseArr = []
-    hadithlinks.forEach((link,index) => promiseArr.push(second(link,index)))
+    hadithlinks.forEach((link,index) => index<=2? promiseArr.push(second(link,index)) : '')
+    await Promise.all(promiseArr)
+    hadithlinks.forEach((link,index) => index>2? promiseArr.push(second(link,index)) : '')
     await Promise.all(promiseArr)
    await browser.close()
 
