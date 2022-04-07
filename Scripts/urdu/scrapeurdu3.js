@@ -4,7 +4,7 @@ const { chromium } = require('playwright');
 const fs = require('fs');
 const path = require('path')
 let browser
-let hadithnames =['ibn-e-maja','nisai','tirmazi','muslim','bukhari','abu-dawood']
+let hadithnames =['nisai','tirmazi']
 
 let mainLink = 'https://www.al-hadees.com/hadees/'
 let hadithlinks = hadithnames.map(e=>mainLink+e+'/')
@@ -46,6 +46,7 @@ async function second(link,indexno){
     try{
       await page.waitForSelector('text=/Hadees Number: \\d+ / Arabic Hadees No. \\d+/',{timeout:20000})
     }catch(e){
+      console.log(link+i+'/0')
       console.error(e)
       count++;
       continue
