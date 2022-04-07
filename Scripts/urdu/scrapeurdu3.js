@@ -6,7 +6,7 @@ const path = require('path')
 let browser
 let hadithnames =['muslim','bukhari','abu-dawood','ibn-e-maja','nisai','tirmazi']
 
-let mainLink = 'https://www.al-hadees.com/hadees-details/'
+let mainLink = 'https://www.al-hadees.com/hadees/'
 let hadithlinks = hadithnames.map(e=>mainLink+e+'/')
 async function test(){
 
@@ -38,9 +38,9 @@ async function second(link,indexno){
         
     let res;   
     try{
-     res = await page.goto(link+i,{timeout:60000});
+     res = await page.goto(link+i+'/0',{timeout:60000});
     }catch(e){
-        res = await page.goto(link+i,{timeout:60000});
+        res = await page.goto(link+i+'/0',{timeout:60000});
     }
     try{
       await page.waitForSelector('text=Arabic Hadees Number',{timeout:10000})
@@ -54,13 +54,17 @@ async function second(link,indexno){
     
 
     try{
-    let num = await page.locator('text=Arabic Hadees Number').textContent()
-    let arabictext = await page.locator('#content-arb-'+i).textContent()
-    arabicarr.push(num+' | '+arabictext.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
-    let urdutext = await page.locator('#content-urd-'+i).textContent()
-    urduarr.push(num+' | '+urdutext.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
-    let engtext = await page.locator('#content-eng-'+i).textContent()
-    engarr.push(num+' | '+engtext.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+      
+    let num = await page.locator('.container :text("Arabic Hadees Number")').allTextContents()
+    let arabictextArr = await page.locator('.container [id^="content-arb-"]').allTextContents()
+    arabictextArr = arabictextArr.map(e=>num+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    arabicarr = arabicarr.concat(arabictextArr)
+    let urdutextArr = await page.locator('.container [id^="content-urd-"]').allTextContents()
+    urdutextArr = urdutextArr.map(e=>num+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    urduarr = urduarr.concat(urdutextArr)
+    let engtextArr = await page.locator('.container [id^="content-eng-"]').allTextContents()
+    engtextArr = engtextArr.map(e=>num+' | '+e.split(/\r?\n/).slice(0,-1).join(' ').replace(/\s\s+/g, ' ').trim())
+    engarr = engarr.concat(engtextArr)
     }catch(e){}
     if(i%300==0){
          await context.close()
