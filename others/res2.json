@@ -1,0 +1,24 @@
+{
+  "collection": "muslim",
+  "bookNumber": "introduction",
+  "chapterId": "2.00",
+  "hadithNumber": "1",
+  "hadith": [
+    {
+      "lang": "en",
+      "chapterNumber": "2",
+      "chapterTitle": "Warning about Lying Upon the Messenger of Allah [peace and blessings of Allah upon him]",
+      "urn": 280020,
+      "body": "<p>Abū Bakr ibn Abī Shaybah narrated to us that Ghundar narrated to us, on authority of Shu’bah; and Muhammad bin ul-Muthannā and Ibn Bashār both narrated to us, they said: Muhammad bin Ja’far narrated to us, Shu’bah narrated to us, on authority of Mansūr, on authority of Rab’iy ibn Hirāsh, that he heard Alī, may Allah be pleased with him, giving a Khutbah and he said that the Messenger of Allah, peace and blessings of Allah upon him, said: ‘Do not lie upon me; indeed whoever lies upon me will enter the Fire’.</p>",
+      "grade": "Sahih"
+    },
+    {
+      "lang": "ar",
+      "chapterNumber": "2",
+      "chapterTitle": "باب فِي التَّحْذِيرِ مِنَ الْكَذِبِ عَلَى رَسُولِ اللَّهِ صَلَّى اللَّهُ عَلَيْهِ وَسَلَّمَ",
+      "urn": 380020,
+      "body": "<p>وَحَدَّثَنَا أَبُو بَكْرِ بْنُ أَبِي شَيْبَةَ، حَدَّثَنَا غُنْدَرٌ، عَنْ شُعْبَةَ، ح وَحَدَّثَنَا مُحَمَّدُ بْنُ الْمُثَنَّى، وَابْنُ، بَشَّارٍ قَالاَ حَدَّثَنَا مُحَمَّدُ بْنُ جَعْفَرٍ، حَدَّثَنَا شُعْبَةُ، عَنْ مَنْصُورٍ، عَنْ رِبْعِيِّ بْنِ حِرَاشٍ، أَنَّهُ سَمِعَ عَلِيًّا، - رضى الله عنه - يَخْطُبُ قَالَ قَالَ رَسُولُ اللَّهِ صلى الله عليه وسلم ‏\"‏ لاَ تَكْذِبُوا عَلَىَّ فَإِنَّهُ مَنْ يَكْذِبْ عَلَىَّ يَلِجِ النَّارَ ‏\"‏ ‏.‏</p>",
+      "grade": "صحيح"
+    }
+  ]
+}
