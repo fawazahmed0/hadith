@@ -22,7 +22,8 @@ async function test(){
                     let [num, grade] = val.split('|').map(e=>e.trim())
                     if(!myjson[folder]["hadiths"][num])
                     myjson[folder]['hadiths'][num] = {}
-                    myjson[folder]['hadiths'][num]['hadithno'] = parseFloat(num)
+                    myjson[folder]['hadiths'][num]['hadithnumber'] = parseFloat(num)
+                    myjson[folder]['hadiths'][num]['arabicnumber'] = parseFloat(num)
                     if(!myjson[folder]['hadiths'][num]['grades'])
                     myjson[folder]['hadiths'][num]['grades'] = []
 
