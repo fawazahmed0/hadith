@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-
+var capitalize = words => words.split(' ').map(w => w[0].toUpperCase() + w.substring(1)).join(' ')
 
 async function test(){
     let myjson = {"editions":{}}
@@ -31,7 +31,14 @@ async function test(){
                     
                     let tempjson = {}
                     tempjson['name'] = file.replace('.txt','').trim()
-                    tempjson['grade'] = mapjson[grade]
+                    
+                    try{
+                        tempjson['grade'] = capitalize(mapjson[grade])
+                    }catch(e){
+                        console.log('value  is ',mapjson[grade], "for ", grade)
+                        tempjson['grade'] = mapjson[grade]
+                    }
+                    
                     myjson["editions"][folder]['hadiths'][num]['grades'].push(tempjson)
 
                 }
