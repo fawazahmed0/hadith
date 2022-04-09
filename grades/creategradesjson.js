@@ -3,7 +3,7 @@ const path = require('path');
 
 
 async function test(){
-    let myjson = {}
+    let myjson = {"editions":{}}
     let mapjson = JSON.parse(fs.readFileSync(path.join(__dirname,'engaramap.json')).toString())
     let mypath =  path.join(__dirname,'hadithfiles')
     let folders = fs.readdirSync(mypath)
@@ -11,8 +11,8 @@ async function test(){
     for(let folder of folders){
         let files = fs.readdirSync(path.join(mypath,folder))
 
-        if(!myjson[folder])
-        myjson[folder] = {"hadiths":{}} 
+        if(!myjson["editions"][folder])
+        myjson["editions"][folder] = {"hadiths":{}} 
 
         for(let file of files){
             let filePath = path.join(mypath,folder,file)
@@ -20,19 +20,19 @@ async function test(){
               let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem))
                 for(let val of arr){
                     let [num, grade] = val.split('|').map(e=>e.trim())
-                    if(!myjson[folder]["hadiths"][num])
-                    myjson[folder]['hadiths'][num] = {}
-                    myjson[folder]['hadiths'][num]['hadithnumber'] = parseFloat(num)
-                    myjson[folder]['hadiths'][num]['arabicnumber'] = parseFloat(num)
-                    if(!myjson[folder]['hadiths'][num]['grades'])
-                    myjson[folder]['hadiths'][num]['grades'] = []
+                    if(!myjson["editions"][folder]["hadiths"][num])
+                    myjson["editions"][folder]['hadiths'][num] = {}
+                    myjson["editions"][folder]['hadiths'][num]['hadithnumber'] = parseFloat(num)
+                    myjson["editions"][folder]['hadiths'][num]['arabicnumber'] = parseFloat(num)
+                    if(!myjson["editions"][folder]['hadiths'][num]['grades'])
+                    myjson["editions"][folder]['hadiths'][num]['grades'] = []
 
 
                     
                     let tempjson = {}
                     tempjson['name'] = file.replace('.txt','').trim()
                     tempjson['grade'] = mapjson[grade]
-                    myjson[folder]['hadiths'][num]['grades'].push(tempjson)
+                    myjson["editions"][folder]['hadiths'][num]['grades'].push(tempjson)
 
                 }
     
