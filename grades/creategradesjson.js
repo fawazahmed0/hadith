@@ -13,6 +13,21 @@ async function test(){
 
         if(!myjson["editions"][folder])
         myjson["editions"][folder] = {"hadiths":{}} 
+        try{
+        let refstr = fs.readFileSync(path.join(__dirname, 'ref', folder+'reference.txt')).toString()
+
+        let refArr = [...refstr.matchAll(/(\d+)In\-book\s*reference\s*\:\s*Book\s*(\d+)\,\s*hadith\s*(\d+)/ig)]
+  
+        for(let ref of refArr){
+            let num = parseFloat(ref[1])
+            if(!myjson["editions"][folder]["hadiths"][num])
+            myjson["editions"][folder]['hadiths'][num] = {}
+            if(!myjson["editions"][folder]['hadiths'][num]['bookref'])
+            myjson["editions"][folder]['hadiths'][num]['bookref'] = {"book":parseFloat(ref[2]),"hadith":parseFloat(ref[3])}
+            
+        }
+    }catch(e){console.error(e)}
+
 
         for(let file of files){
             let filePath = path.join(mypath,folder,file)
@@ -20,12 +35,15 @@ async function test(){
               let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem))
                 for(let val of arr){
                     let [num, grade] = val.split('|').map(e=>e.trim())
+                    num = parseFloat(num)
                     if(!myjson["editions"][folder]["hadiths"][num])
                     myjson["editions"][folder]['hadiths'][num] = {}
                     myjson["editions"][folder]['hadiths'][num]['hadithnumber'] = parseFloat(num)
                     myjson["editions"][folder]['hadiths'][num]['arabicnumber'] = parseFloat(num)
                     if(!myjson["editions"][folder]['hadiths'][num]['grades'])
                     myjson["editions"][folder]['hadiths'][num]['grades'] = []
+
+                    
 
 
                     
@@ -47,7 +65,7 @@ async function test(){
 
     }
 
-    fs.writeFileSync(path.join(__dirname, 'grades.json'),JSON.stringify(myjson,null,4))
+    fs.writeFileSync(path.join(__dirname, 'grades.json'),JSON.stringify(myjson,null,'\t'))
 
 
 }
