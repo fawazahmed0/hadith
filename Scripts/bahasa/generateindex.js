@@ -6,14 +6,14 @@ async function test(){
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
     let mypath =  path.join(__dirname,'hadith')
-    let files = fs.readdirSync(mypath)
+    let files = fs.readdirSync(mypath).filter(e=>e.includes('muslim'))
 
 
       let middlename = 'arabic'
     for(let file of files){
         console.log(file)
         
-        let indexname = file.replace('.json','') + middlename+'scrapped3'
+        let indexname = file.replace('.json','') + middlename+'4'
       let filePath = path.join(mypath,file)
         let str = fs.readFileSync(filePath).toString()
         let json = JSON.parse(str)

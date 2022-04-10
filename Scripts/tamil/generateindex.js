@@ -9,9 +9,9 @@ async function test(){
    // let files = fs.readdirSync(mypath)
 
 
-      let middlename = ''
+      let middlename = 'english'
     for(let file of bookArr){
-        let indexname = file + middlename+'scrapped3'
+        let indexname = file + middlename+'4'
 
       let filePath1 = path.join(mypath,file+'tamil.txt')
       let filePath2 = path.join(mypath,file+'english.txt')
