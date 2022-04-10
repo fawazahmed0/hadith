@@ -17,12 +17,14 @@ async function test(){
           let count = 1
           for(let i=0;i<myarr.length;i++){
             if(parseInt(myarr[i][1])==parseInt(val)){
-              myarr[i][1] = parseInt(myarr[i][1]) +parseFloat(count*0.1)
+              myarr[i][1] = parseInt(myarr[i][1]) +parseFloat(count*0.01)
+              myarr[i][1] = myarr[i][1].toFixed(2)
               count++;
             }
           }
 
         }
+        myarr.sort((a, b) => parseFloat(a[0]) - parseFloat(b[0]))
         //console.log(myarr[2])
         //let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem))
         // arr.sort((a, b) => parseInt(a.match(/\d+/)[0]) - parseInt(b.match(/\d+/)[0]))
