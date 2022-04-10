@@ -13,7 +13,7 @@ for(let file of files){
     console.log(file)
     let str = fs.readFileSync(filePath).toString()
     let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
-    let indexname = file.replace(/\.txt$/,'') + '3'
+    let indexname = file.replace(/\.txt$/,'') + '4'
     for(let val of arr){
       try{
       let [val1,val2] = val.split(' | ')
