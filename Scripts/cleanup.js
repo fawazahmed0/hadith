@@ -10,7 +10,7 @@ async function test(){
     
     for(let filePath of filesArr){
 
-        if( !filePath.includes('compiled'))
+        if( !filePath.includes('newly'))
             continue
             let str = fs.readFileSync(filePath).toString()
             let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
