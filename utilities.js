@@ -14,24 +14,34 @@ function renameInnerJSONKey(obj, oldKey, newKey){
             renameJSONKey(obj, oldKey, newKey)
     }
     }
-/*
-    function sortJSON(obj, emptyObj, keyArr){
 
-      for(let [key, value] of Object.entries(obj)){
-          if(isObject(value)){
-            emptyObj[key] = {}
-          sortJSON(value,emptyObj[key], keyArr)
+    function sortInnerJSON(obj,inner) {
+    
+      for(let key of Object.keys(obj)) {
+          if(isObject(obj[key])) {
+              obj[key] = sortJSON(obj[key])
+              sortInnerJSON(obj[key],true);
           }
-          
-          for(let val of keyArr){
-            if(Object.keys(obj).includes(val))
-            emptyObj[val] = obj[val]
+  
       }
-      emptyObj[key] = obj[key]
-
-      }    
+      obj = sortJSON(obj)
+      if(!inner) 
+      return obj;
+  
+  }
+  
+  
+    function sortJSON(jsonObj){
+    
+      return Object.keys(jsonObj).sort().reduce(
+          (obj, key) => { 
+            obj[key] = jsonObj[key]; 
+            return obj;
+          }, 
+          {}
+        );
+  
     }
-*/
 function renameJSONKey ( obj, oldKey, newKey ) {
     obj[newKey] = obj[oldKey];
     delete obj[oldKey];
@@ -213,5 +223,5 @@ function saveJSON(jsondata, pathToFile, indent) {
 
 
 module.exports = {
-  getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
