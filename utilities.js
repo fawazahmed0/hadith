@@ -14,27 +14,29 @@ function renameInnerJSONKey(obj, oldKey, newKey){
             renameJSONKey(obj, oldKey, newKey)
     }
     }
+  // values in arr is given first preferences & then by alphabetical order
 
-    function sortInnerJSON(obj,inner) {
-    
+    function sortInnerJSON(obj, arr=[],inner) {
+ 
       for(let key of Object.keys(obj)) {
           if(isObject(obj[key])) {
               obj[key] = sortJSON(obj[key])
-              sortInnerJSON(obj[key],true);
+              sortInnerJSON(obj[key],arr,true);
           }
   
       }
-      obj = sortJSON(obj)
+      obj = sortJSON(obj, arr)
       if(!inner) 
       return obj;
   
   }
   
-  
-    function sortJSON(jsonObj){
+  // values in arr is given first preferences & then by alphabetical order
+    function sortJSON(jsonObj,arr=[]){
     
-      return Object.keys(jsonObj).sort().reduce(
+      return arr.concat(Object.keys(jsonObj).sort()).reduce(
           (obj, key) => { 
+            if(jsonObj[key])
             obj[key] = jsonObj[key]; 
             return obj;
           }, 
@@ -51,7 +53,6 @@ function renameJSONKey ( obj, oldKey, newKey ) {
 function isObject(obj) {
     return obj === Object(obj);
   }
-
 
 const capitalize = words => words.toLowerCase().replace(/(^\w{1})|(\s+\w{1})/g, match => match.toUpperCase()).trim()
 
