@@ -51,7 +51,7 @@ async function test(){
         }
         */
 
-
+           // fs.copyFileSync(filePath,path.join(__dirname,'..','..','hadith-api' , 'start',language+path.basename(filePath)),fs.constants.COPYFILE_EXCL)
             fs.writeFileSync(filePath,str)
         
 
