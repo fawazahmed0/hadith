@@ -33,8 +33,14 @@ function renameInnerJSONKey(obj, oldKey, newKey){
   
   // values in arr is given first preferences & then by alphabetical order
     function sortJSON(jsonObj,arr=[]){
-    
-      return arr.concat(Object.keys(jsonObj).sort()).reduce(
+      let objectKeys = Object.keys(jsonObj)
+      // sort numbers properly
+      if(!yourArray.some(isNaN))
+      objectKeys.sort((a, b) => a-b)
+      else
+      objectKeys.sort()
+
+      return arr.concat(objectKeys).reduce(
           (obj, key) => { 
             if(jsonObj[key])
             obj[key] = jsonObj[key]; 
