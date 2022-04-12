@@ -185,6 +185,15 @@ function logmsg(str,logPath, skipconsole) {
     if (!skipconsole)
       console.log(str)
   } 
+
+function saveJSON(jsondata, pathToFile, indent) {
+    if(indent)
+    fs.writeFileSync(pathToFile,JSON.stringify(jsondata,null,indent))
+    else
+    fs.writeFileSync(pathToFile,JSON.stringify(jsondata))
+  }
+
+
 module.exports = {
-    renameInnerJSONKey, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+    renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
