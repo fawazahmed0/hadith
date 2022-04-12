@@ -1,4 +1,3 @@
-//const {firefox} = require('playwright');
 const fs = require('fs');
 const path = require('path')
 const fetch = require('node-fetch');
@@ -76,64 +75,6 @@ function getJSONInArray(arr) {
       return [JSON.parse(arr.slice(i).join('\n')), i]
   }
 
-// Generates the json with standard naming conventions
-async function generateJSON(arr, newjson, editionName) {
-
-    var isocode = newjson['iso']
-    // Deleting iso key, as it might create a bug in the future, as this key was added later to solve an issue in actions enviroment
-    delete newjson['iso']
-    // capitalize first letters
-    newjson['language'] = capitalize(newjson['language'])
-    // If values are undefined we will assign it as empty string
-    newjson['author'] = newjson['author'] || "unknown"
-  
-    // Removing special symbols and diacritics from authors name
-    newjson['author'] = newjson['author'].normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/[^A-Za-z\s\.\,]+/gi, " ").replace(/\s\s+/gi, " ").toLowerCase().trim()
-    newjson['author'] = capitalize(newjson['author'])
-  
-    // If values are undefined we will assign it as empty string
-    newjson['source'] = newjson['source'] || ""
-    newjson['comments'] = newjson['comments'] || ""
-  
-  
-    // Number of chars to consider in author name for editionName creation
-    var authorSize = 15
-    // Take first few chars of like 10chars for author to make editionName
-    // editionName will be a foldername and also part of url, so cannot have anything other than latin alphabets
-    if (!editionName)
-      editionName = isocode + "-" + newjson['author'].toLowerCase().replace(/[^A-Za-z]+/gi, "").substring(0, authorSize);
-  
-    // first check file with same endpoint exists or not in editions.json, if there then we will add 1 to the editionname and check again
-    for (var i = 1;; i++) {
-      // If a filename with same edition name exists in database then add number to the editionName
-      if (jsondb[editionName + '.txt'] || jsondb[editionName + '-la.txt'] || jsondb[editionName + '-lad.txt']) {
-        // Fetch the number if exists in the editionName
-        var Num = editionName.match(/\d+$/) || [0]
-        Num = parseInt(Num[0])
-        // Increment that number if it exists to get a new editionName
-        editionName = editionName.replace(/\d+$/, "") + (Num + 1);
-      } else
-        break;
-    }
-  
-    newjson['name'] = editionName
-    newjson['link'] = url + editionsFolder + "/" + editionName + ".json"
-    newjson['linkmin'] = url + editionsFolder + "/" + editionName + ".min.json"
-    newjson['direction'] = await dirCheck(arr.slice(0, 10).join('\n'))
-  
-    // JSON in sorted order
-    var sortjson = {}
-    sortjson['name'] = newjson['name']
-    sortjson['author'] = newjson['author']
-    sortjson['language'] = newjson['language']
-    sortjson['direction'] = newjson['direction']
-    sortjson['source'] = newjson['source']
-    sortjson['comments'] = newjson['comments']
-    sortjson['link'] = newjson['link']
-    sortjson['linkmin'] = newjson['linkmin']
-  
-    return sortjson
-  }
 
 // This function checks the direction of the language and returns either rtl or ltr
 // https://playwright.dev/#version=v1.3.0&path=docs%2Fcore-concepts.md&q=evaluation
@@ -211,12 +152,12 @@ function cleanifyObject(jsondata) {
     return newjson
   }
 
- // Stores all the log, to help in reviewing PR and checking for any mistake by the user
-function logmsg(str,logPath, skipconsole) {
-    fs.appendFileSync(logPath, str)
-    if (!skipconsole)
-      console.log(str)
-  } 
+// Stores all the log, to help in reviewing PR and checking for any mistake by the user
+function logmsg(str, skipconsole) {
+  fs.appendFileSync("log.txt", str)
+  if (!skipconsole)
+    console.log(str)
+}
 
 function saveJSON(jsondata, pathToFile, indent) {
     if(indent)
@@ -278,5 +219,5 @@ function search(arr) {
 
 
 module.exports = {
-  search,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  search,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
