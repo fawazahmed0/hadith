@@ -228,7 +228,55 @@ function saveJSON(jsondata, pathToFile, indent) {
     return Object.keys(object).find(key => object[key] === value);
   }
 
+// reads the file using streams, start is the starting byte and end is the bytes to read
+async function streamRead(pathtofile, start, end) {
+  var readstream;
+  if (start && !end)
+    readstream = fs.createReadStream(pathtofile, {
+      start: start
+    });
+  else if (!start && end)
+    readstream = fs.createReadStream(pathtofile, {
+      end: end
+    });
+  else if (!start && !end)
+    readstream = fs.createReadStream(pathtofile);
+  else
+    readstream = fs.createReadStream(pathtofile, {
+      start: start,
+      end: end
+    });
+
+  var data = ''
+  for await (var chunk of readstream) {
+    data = data + chunk.toString()
+  }
+  return data
+}
+
+
+// searches the string in whole linebyline database
+function search(arr) {
+  var found = false
+  for (var val of arr) {
+    for (var filename of fs.readdirSync(linebylineDir)) {
+      var content = fs.readFileSync(path.join(linebylineDir, filename)).toString();
+      str = cleanify(val)
+      content = cleanify(content)
+
+      if (content.includes(str)) {
+        logmsg("\n Line: " + val + " contains in edition \n" + filename.replace(/(\.[^\.]*$)/i, ""))
+        found = true
+      }
+    }
+  }
+  if (!found)
+    logmsg("\n No edition found in the database")
+}
+
+
+
 
 module.exports = {
-  sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  search,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
