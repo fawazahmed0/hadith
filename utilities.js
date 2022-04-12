@@ -14,9 +14,24 @@ function renameInnerJSONKey(obj, oldKey, newKey){
             renameJSONKey(obj, oldKey, newKey)
     }
     }
+/*
+    function sortJSON(obj, emptyObj, keyArr){
 
+      for(let [key, value] of Object.entries(obj)){
+          if(isObject(value)){
+            emptyObj[key] = {}
+          sortJSON(value,emptyObj[key], keyArr)
+          }
+          
+          for(let val of keyArr){
+            if(Object.keys(obj).includes(val))
+            emptyObj[val] = obj[val]
+      }
+      emptyObj[key] = obj[key]
 
-
+      }    
+    }
+*/
 function renameJSONKey ( obj, oldKey, newKey ) {
     obj[newKey] = obj[oldKey];
     delete obj[oldKey];
@@ -192,8 +207,11 @@ function saveJSON(jsondata, pathToFile, indent) {
     else
     fs.writeFileSync(pathToFile,JSON.stringify(jsondata))
   }
+  function getJSONKeyByValue(object, value) {
+    return Object.keys(object).find(key => object[key] === value);
+  }
 
 
 module.exports = {
-    renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,generateJSON,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };

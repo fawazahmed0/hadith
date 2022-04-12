@@ -1,4 +1,4 @@
-var util = require('./../utilities.js');
+var util = require('../utilities.js');
 var path = require('path');
 
 async function test(){
