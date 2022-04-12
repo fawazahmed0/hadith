@@ -3915,3 +3915,8 @@
 3954 | Narrated Zaid bin Thabit:"We were with the Messenger of Allah (ﷺ) collecting the Qur'an on pieces of cloth, so the Messenger of Allah (ﷺ) said: 'Tuba is for Ash-Sham.' So we said: 'Why is that O Messenger of Allah?' He said: 'Because the angels of Ar-Rahman spread their wings over it.'"
 3955 | Narrated Abu Hurairah:that the Prophet (ﷺ) said: "People should stop boasting about their fathers who have died, while they are but coals of Hell, or they will be more humiliated with Allah than the dung beetle who rolls dung with his nose. Indeed Allah has removed the pride of Jahiliyyah from you, and its boasting about lineage. [Indeed a person is either] a pious believer, or a miserable sinner. And people are all the children of Adam, and Adam was [created] from dust."
 3956 | Narrated Abu Hurairah [may Allah be pleased with him]:that the Messenger of Allah (ﷺ) said: "Allah has removed the pride of Jahiliyyah from you and boasting about lineage. (A person is either) a pious believer or a miserable sinner, and the people are the children of Adam, and Adam is from dirt."
+{
+	"author": "",
+	"book": "tirmidhi",
+	"language": "english"
+}

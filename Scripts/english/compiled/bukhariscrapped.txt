@@ -7275,3 +7275,8 @@
 7561 | Narrated `Aisha:Some people asked the Prophet (ﷺ) regarding the soothsayers. He said, "They are nothing." They said, "O Allah's Messenger (ﷺ)! Some of their talks come true." The Prophet (ﷺ) said, "That word which happens to be true is what a Jinn snatches away by stealth (from the Heaven) and pours it in the ears of his friend (the foreteller) with a sound like the cackling of a hen. The soothsayers then mix with that word, one hundred lies."
 7562 | Narrated Abu Sa`id Al-Khudri:The Prophet (ﷺ) said, "There will emerge from the East some people who will recite the Qur'an but it will not exceed their throats and who will go out of (renounce) the religion (Islam) as an arrow passes through the game, and they will never come back to it unless the arrow, comes back to the middle of the bow (by itself) (i.e., impossible). The people asked, "What will their signs be?" He said, "Their sign will be the habit of shaving (of their beards and their heads). (Fath-ul-Bari, Page 322, Vol. 17th)
 7563 | Narrated Abu Huraira:The Prophet (ﷺ) said, "(There are) two words which are dear to the Beneficent (Allah) and very light (easy) for the tongue (to say), but very heavy in weight in the balance. They are: ''Subhan Allah wa-bi hamdihi'' and ''Subhan Allah Al-`Azim." (see Hadith 6682).
+{
+	"author": "",
+	"book": "bukhari",
+	"language": "english"
+}

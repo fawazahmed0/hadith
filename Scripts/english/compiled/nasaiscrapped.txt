@@ -5675,3 +5675,8 @@
 5756 | It was narrated that 'Abidah said:"The people have invented drinks and I do not know what they are. I have not drunk anything for 20 years except water, milk and honey."
 5757 | It was narrated that Ibn Shubrumah said:"Talhah said to the people of Al-Kufah concerning Nabidh: 'It is a test whereby a young man may benefit but an old man may be harmed.' If there was a wedding among them, Talhah and Zubaid would offer milk and honey to drink. It was said to Talhah: 'Why don't you offer Nabidh?' He said: 'I would not like a Muslim to become intoxicated because of me.'"
 5758 | Jarir said:"Ibn Shubrumah would not drink anything except water and milk."
+{
+	"author": "",
+	"book": "nasai",
+	"language": "english"
+}

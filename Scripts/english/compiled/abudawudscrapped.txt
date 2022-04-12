@@ -5270,3 +5270,8 @@
 5272 | Narrated AbuUsayd al-Ansari: AbuUsayd heard the Messenger of Allah (ﷺ) say when he was coming out of the mosque, and men and women were mingled in the road: Draw back, for you must not walk in the middle of the road; keep to the sides of the road. Then women were keeping so close to the wall that their garments were rubbing against it.
 5273 | Narrated Abdullah ibn Umar: The Prophet (ﷺ) prohibited that one, i.e. man, should walk between two women.
 5274 | Abu Hurairah reported the prophet (ﷺ) as saying:Allah most high says : “The son of Adam injures me by abusing time, whereas I am time. Authority is in my hand. I alternate the night and the day”. Ibn al-Sarh said: “on the authority of Ibn al-Musayyab instead of Sa’id’.
+{
+	"author": "",
+	"book": "abudawud",
+	"language": "english"
+}

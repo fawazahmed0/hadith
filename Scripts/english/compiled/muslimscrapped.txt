@@ -7315,3 +7315,8 @@
 7561 | This hadith has been transmitted on the same authority but with a slight variation of wording.
 7562 | Abu Dharr took an oath that this verse:" These two adversaries who dispute about their Lord" (xxii. 19) was revealed in connection with those who on the Day of Badr came out (of rows to fight against the non-believers and they were) Hamza, 'Ali, 'Ubaida b. Harith (from the side of the Muslims) and 'Utba and Shaiba, both of them the sons of Rabi'a and Walid b. 'Utba (from the side of the non-believers of Mecca).
 7563 | This hadith has been narrated on the authority of Abu Dharr through another chain of transmitters.
+{
+	"author": "",
+	"book": "muslim",
+	"language": "english"
+}
