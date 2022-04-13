@@ -155,7 +155,7 @@ function cleanifyObject(jsondata) {
 // Stores all the log, to help in reviewing PR and checking for any mistake by the user
 function logmsg(str, skipconsole) {
   
-  fs.appendFileSync(path.join(path.dirname(process.argv[1]),'log.txt'), str)
+  fs.appendFileSync(path.join(path.dirname(process.argv[1]),'log.txt'), '\n'+str)
   if (!skipconsole)
     console.log(str)
 }
