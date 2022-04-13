@@ -13,6 +13,11 @@ function renameInnerJSONKey(obj, oldKey, newKey){
             renameJSONKey(obj, oldKey, newKey)
     }
     }
+
+    function renameJSONKey ( obj, oldKey, newKey ) {
+      obj[newKey] = obj[oldKey];
+      delete obj[oldKey];
+    }
     // replace json values with default values
     function replaceInnerJSON(obj,num=0, arr=[], inner){
 
@@ -79,10 +84,7 @@ function renameInnerJSONKey(obj, oldKey, newKey){
         );
   
     }
-function renameJSONKey ( obj, oldKey, newKey ) {
-    obj[newKey] = obj[oldKey];
-    delete obj[oldKey];
-  }
+
 
 
 function isObject(obj) {
