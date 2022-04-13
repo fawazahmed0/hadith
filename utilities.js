@@ -90,7 +90,7 @@ async function dirCheck(str,page) {
   }
   
   // Returns the iso name ,iso2 of the language
-function isoLangMap(arrval) {
+function isoLangMap(arrval,isocodes) {
     for (var [lang, val] of Object.entries(isocodes)) {
       if (arrval[0].toLowerCase().replace(/[^A-Za-z\(\)]+/gi, "").trim() == lang.toLowerCase().replace(/[^A-Za-z\(\)]+/gi, "").trim())
         return [lang, val.iso2]
@@ -105,7 +105,6 @@ function isoLangMap(arrval) {
  // reads the text file and returns [originalarr, filtererdarr, cleanarr jsondata]
 // orignalarr  orignalfile as arr,
 // filtererdarr - No empty lines in it
-// cleanarr  cleans the translation from patterns etc
 // jsondata - JSON data at the end of file, return undefined if doens't exists
 function readDBTxt(pathToFile) {
     var orgarr = fs.readFileSync(pathToFile).toString().split(/\r?\n/)
@@ -119,12 +118,12 @@ function readDBTxt(pathToFile) {
     if (Array.isArray(temp))
         orgarr = orgarr.slice(0, temp[1])
        // validates the translation for mistakes such as extra newline etc and corrects it and clean the translation from any number patterns ,etc
-        cleanarr = validateCleanTrans(orgarr, path.basename(pathToFile))
+       filterarr = orgarr.filter(elem => !/^\s*$/.test(elem))
   // If the json exists then return json with the array
   if (Array.isArray(temp))
-      return [orgarr, cleanarr , temp[0]]
+      return [orgarr, filterarr , temp[0]]
   // return without json
-  return [orgarr, cleanarr]
+  return [orgarr, filterarr]
   } 
 // function which checks whether a string is valid json or not
 function isValidJSON(str) {
@@ -215,7 +214,6 @@ function search(arr) {
   if (!found)
     logmsg("\n No edition found in the database")
 }
-
 
 
 
