@@ -13,6 +13,36 @@ function renameInnerJSONKey(obj, oldKey, newKey){
             renameJSONKey(obj, oldKey, newKey)
     }
     }
+    // replace json values with default values
+    function replaceInnerJSON(obj,num=0, arr=[], inner){
+
+      for(let key of Object.keys(obj)) {
+        if(isObject(obj[key])) {
+            obj[key] = replaceJSON(obj[key],num, arr)
+            replaceInnerJSON(obj[key],num,arr,true);
+        }
+
+    }
+    obj = replaceJSON(obj,num, arr)
+    if(!inner) 
+    return obj
+
+    }
+
+    function replaceJSON(obj,num=0,arr=[]){
+
+      for(let [key, value] of Object.entries(obj)){
+        if(Array.isArray(value))
+          obj[key] = arr
+        else if(!isNaN(value))
+          obj[key] = num
+
+      }
+      return obj
+    }
+
+
+
   // values in arr is given first preferences & then by alphabetical order
 
     function sortInnerJSON(obj, arr=[],inner) {
@@ -218,5 +248,5 @@ function search(arr) {
 
 
 module.exports = {
-  search,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  replaceInnerJSON,replaceJSON,search,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
