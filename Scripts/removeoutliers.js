@@ -14,14 +14,14 @@ async function test(){
        
             let str = fs.readFileSync(filePath).toString()
             let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
-
+            let num = 50
             for(let i=0;i<arr.length;i++){
                 try{
                 let prevVal = parseFloat( arr[i-1].match(/\d+\.?\d*/)[0] )
                 let currentVal = parseFloat( arr[i].match(/\d+\.?\d*/)[0])
                 let nextVal = parseFloat( arr[i+1].match(/\d+\.?\d*/)[0])
 
-                if(Math.abs(prevVal - currentVal) > 10 && Math.abs(currentVal - nextVal) > 10 && nextVal-prevVal<10 ){
+                if(Math.abs(prevVal - currentVal) > num && Math.abs(currentVal - nextVal) > num && nextVal-prevVal<num ){
 
                     arr[i] = ''
                 }
