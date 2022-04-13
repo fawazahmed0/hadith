@@ -9,8 +9,9 @@ async function test(){
     traverseDir(path.join(__dirname))
     
     for(let filePath of filesArr){
-
-        if(filePath.includes('compiled')){
+        if(!filePath.includes('newly') || !filePath.includes('turkish'))
+        continue
+       
             let str = fs.readFileSync(filePath).toString()
             let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
 
@@ -28,7 +29,7 @@ async function test(){
             }catch(e){}
             }
             fs.writeFileSync(filePath,arr.filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim()).join('\n').trim())
-        }
+        
 
 
 
