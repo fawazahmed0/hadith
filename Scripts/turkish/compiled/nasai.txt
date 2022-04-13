@@ -592,3 +592,8 @@
 2076 | Esved ve Âişe (radıyallahü anhüma)’dan rivâyete göre, şöyle demişlerdir: Rasûlüllah (sallallahü aleyhi ve sellem), ölüm hastalığında Hazret-i Ali’ye vasiyet etmişti.) (Rasûlüllah sallallahü aleyhi ve sellem)’in hastalığı çok ağırdı ve küçük abdestini yapmak için bir kap istemişti, o esnada kime ne vasiyet ettiğini bilmiyorum.) (Ebû Dâvûd, Tahara: 13; İbn Mâce, Cenaiz: 64)
 2318 | Muaze el Adevi (radıyallahü anha)’dan rivâyete göre, şöyle demiştir: Bir kadın Âişe’ye: gören kadın namaz kılacak mı?) diye sordu. Âişe ise: Harurilerden misin? Biz, Rasûlüllah (sallallahü aleyhi ve sellem) zamanında; hayız gördüğümüzde namaz kılmazdık ve kazasıyla da emrolunmazdık) dedi. (Ebû Dâvûd, Tahara: 104; Dârimi, Tahara: 102)
 4437 | Sadaka yemememizi,
+{
+	"author": "",
+	"book": "nasai",
+	"language": "turkish"
+}

@@ -4599,3 +4599,8 @@
 5272 | (Hamza b. Ebi Üseyd el-Ensarî'nin) babasından (rivâyet edildiğine göre) kendisi (birgün) Resûlüllah (sallallahü aleyhi ve sellem)'i mescidin dışında konuşurken işitmiş (ve orada Hazret-i Peygamberin konuşmakta olduğunu gören) erkekler (Hazret-i Peygamberi daha yakından dinleyebilmek için) yolda (Hazret-i Peygamber'in etrafında) bulunan kadınlarla karışmışlar. Bunun üzerine Resûlüllah (sallallahü aleyhi ve sellem) kadınlara (hitaben): Geri çekilin, sizin yolun ortasından gitmeniz (doğru) olmaz. Size gereken yolun kenarı (ndan yürümeniz)dir" buyurdu. üzerine kadınlar duvara sürtünerek yürür oldular. Hatta (yolun kenarında bulunan) duvar(lar)a sürtünürcesine yürümelerinden dolayı elbiseleri (zaman zaman) duvar(lar)a takılıyordu.
 5273 | Hazret-i İbn Ömer'den (rivâyet edildiğine göre) Peygamber (sallallahü aleyhi ve sellem) bir erkeğin (kendisine nikâh düşen) iki kadın arasında yürümesini yasaklamıştır.
 5274 | Hazret-i Ebû Hüreyre'nin Peygamber (sallallahü aleyhi ve sellem)'den (rivâyetine göre) Aziz ve Celil olan Allah şöyle buyurmaktadır" Ademoğlu dehre söverek bana eziyet etmektedir. Oysa dehri (yaratan) Benim; geceyi ve gündüzü Ben idare ederim. es-Serc (bu hadisi rivâyet ederken, Muhammed b. es-Sabah'ın rivâyetinden farklı olarak) Said (den rivâyet edildi) yerine " İbn el-Müseyyeb'den (rivâyet edildi)" tefsir 45/1, tevhid 35, Müslim, elfaz 2, 3; Ahmed b. Hanbel, II, 238, 272. dedi.
+{
+	"author": "",
+	"book": "abudawud",
+	"language": "turkish"
+}

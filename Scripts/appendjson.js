@@ -20,7 +20,7 @@ async function test(){
     
     for(let filePath of filesArr){
 
-        if(!filePath.includes('compiled'))
+        if(!filePath.includes('compiled') || !filePath.includes('turkish'))
         continue
         let bookval = ''
         for(let book of booknames){
@@ -51,8 +51,8 @@ async function test(){
         }
         */
 
-           // fs.copyFileSync(filePath,path.join(__dirname,'..','..','hadith-api' , 'start',language+path.basename(filePath)),fs.constants.COPYFILE_EXCL)
-            fs.writeFileSync(filePath,str)
+            fs.copyFileSync(filePath,path.join(__dirname,'..','..','hadith-api' , 'start',language+path.basename(filePath)))
+          //  fs.writeFileSync(filePath,str)
         
 
 

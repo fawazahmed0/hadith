@@ -469,3 +469,8 @@
 1838 | Ebû Talib'in kızı Ümmü Hani'den: Resûlüllah (sallallahü aleyhi ve sellem) Mekke'nin fethedildiği sene bir kumaş parçasından oluşan bir elbiseye sarınarak sekiz rekat kuşluk namazı kıldı.
 1845 | Abdullah b. Zübeyr'in oğlu Amir, gök gürültüsünü duyduğu zaman konuşmayı bırakır ve şöyle derdi: gürlemesi hamd ile, melekler de korku ile onu teşbih eder.» Râd, 13. Bundan sonra da: «Bu, elbette ki yeryüzündekilere şiddetli bir tehdittir» derdi.
 1851 | Yesar oğlu Süleyman'dan: Zeyd b. Sabit: «Kendisi durup görme duygusu giderilen gözün diyeti yüz dinardır» derdi.
+{
+	"author": "",
+	"book": "malik",
+	"language": "turkish"
+}
