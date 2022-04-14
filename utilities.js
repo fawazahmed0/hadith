@@ -172,7 +172,7 @@ function readDBTxt(pathToFile) {
 
 function validateCleanTrans(json) {
   // remove empty values from json
-  Object.keys(json).forEach(k => !obj[k] && delete obj[k]);
+  Object.keys(json).forEach(k => !json[k] && delete json[k]);
   return cleanTrans(json)
 
 }
