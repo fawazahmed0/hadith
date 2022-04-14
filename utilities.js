@@ -140,12 +140,7 @@ function isoLangMap(arrval,isocodes) {
 // jsondata - JSON data at the end of file, return undefined if doens't exists
 function readDBTxt(pathToFile) {
     var orgarr = fs.readFileSync(pathToFile).toString().split(/\r?\n/)
-        // find index of element which doesn't follow pattern of number | text
-        let indexProblem = orgarr.findIndex(e=>!/^\d+\.?\d*\s*\|\s*/.test(e) && !/^\s*$/.test(e))
-        if(indexProblem != -1){
-          logmsg("problem at index "+indexProblem+" in file "+path.basename(pathToFile)+" skipping this")
-          return
-        }
+
     // now remove all lines with empty strings or spaces or tabs
     // https://stackoverflow.com/a/281335
     // return elememnt only if they are not spaces/tabs and emptyline
@@ -155,6 +150,13 @@ function readDBTxt(pathToFile) {
     // If the json exists, then Remove the json from the file
     if (Array.isArray(temp))
         orgarr = orgarr.slice(0, temp[1])
+
+                // find index of element which doesn't follow pattern of number | text
+                let indexProblem = orgarr.findIndex(e=>!/^\d+\.?\d*\s*\|\s*/.test(e) && !/^\s*$/.test(e))
+                if(indexProblem != -1){
+                  logmsg("problem at index "+indexProblem+" in file "+path.basename(pathToFile)+" skipping this")
+                  return
+                }
         // convert it into json for ease
         var orgjson = orgarr.map(e=>[e.split('|')[0].trim(),e.split('|').slice(1).join(' ').trim()])
         orgjson = Object.fromEntries(orgjson)
