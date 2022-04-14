@@ -53,7 +53,7 @@ function renameInnerJSONKey(obj, oldKey, newKey){
     function sortInnerJSON(obj, arr=[],inner) {
  
       for(let key of Object.keys(obj)) {
-          if(isObject(obj[key]) && !Array.isArray(obj[key])) {
+          if(isObject(obj[key])) {
               obj[key] = sortJSON(obj[key])
               sortInnerJSON(obj[key],arr,true);
           }
@@ -223,13 +223,7 @@ function getOppoBracket(str) {
   }
 }
 
-// Checks for duplicate files in the database
-function checkduplicateTrans(json, pathToDir) {
-  for (var filename of fs.readdirSync(pathToDir)) {
-    if (cleanify(Object.values(json).join('\n')).includes(cleanify(jsondb[filename]['snippet'])))
-      return filename
-  }
-}
+
 
 // function which checks whether a string is valid json or not
 function isValidJSON(str) {
@@ -310,5 +304,5 @@ async function streamRead(pathtofile, start, end) {
 
 
 module.exports = {
-  checkduplicateTrans, cleanify,replaceInnerJSON,replaceJSON,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+   cleanify,replaceInnerJSON,replaceJSON,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
