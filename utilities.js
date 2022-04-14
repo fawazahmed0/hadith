@@ -53,7 +53,7 @@ function renameInnerJSONKey(obj, oldKey, newKey){
     function sortInnerJSON(obj, arr=[],inner) {
  
       for(let key of Object.keys(obj)) {
-          if(isObject(obj[key])) {
+          if(isObject(obj[key]) && !Array.isArray(obj[key])) {
               obj[key] = sortJSON(obj[key])
               sortInnerJSON(obj[key],arr,true);
           }
