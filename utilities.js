@@ -228,27 +228,8 @@ async function streamRead(pathtofile, start, end) {
 }
 
 
-// searches the string in whole linebyline database
-function search(arr) {
-  var found = false
-  for (var val of arr) {
-    for (var filename of fs.readdirSync(linebylineDir)) {
-      var content = fs.readFileSync(path.join(linebylineDir, filename)).toString();
-      str = cleanify(val)
-      content = cleanify(content)
-
-      if (content.includes(str)) {
-        logmsg("\n Line: " + val + " contains in edition \n" + filename.replace(/(\.[^\.]*$)/i, ""))
-        found = true
-      }
-    }
-  }
-  if (!found)
-    logmsg("\n No edition found in the database")
-}
-
 
 
 module.exports = {
-  replaceInnerJSON,replaceJSON,search,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  replaceInnerJSON,replaceJSON,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
