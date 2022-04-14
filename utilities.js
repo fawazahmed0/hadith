@@ -183,6 +183,11 @@ function cleanifyObject(jsondata) {
     return newjson
   }
 
+  // clean the string from special symbols,numbers,multiple spaces etc , this is used for string comparision
+function cleanify(str) {
+  return str.replace(/[\u0020-\u0040|\u005b-\u0060|\u007b-\u007e|\s|\n]+/gi, " ").replace(/^\s*\w{1}\s+/i, " ").replace(/\s\s+/g, " ").trim().toLowerCase()
+}
+
 // Stores all the log, to help in reviewing PR and checking for any mistake by the user
 function logmsg(str, skipconsole) {
   
@@ -231,5 +236,5 @@ async function streamRead(pathtofile, start, end) {
 
 
 module.exports = {
-  replaceInnerJSON,replaceJSON,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  cleanify,replaceInnerJSON,replaceJSON,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
