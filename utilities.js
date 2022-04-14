@@ -50,20 +50,6 @@ function renameInnerJSONKey(obj, oldKey, newKey){
 
   // values in arr is given first preferences & then by alphabetical order
 
-    function sortInnerJSON(obj, arr=[],inner) {
- 
-      for(let key of Object.keys(obj)) {
-          if(isObject(obj[key])) {
-              obj[key] = sortJSON(obj[key])
-              sortInnerJSON(obj[key],arr,true);
-          }
-  
-      }
-      obj = sortJSON(obj, arr)
-      if(!inner) 
-      return obj;
-  
-  }
   
   // values in arr is given first preferences & then by alphabetical order
     function sortJSON(jsonObj,arr=[]){
@@ -304,5 +290,5 @@ async function streamRead(pathtofile, start, end) {
 
 
 module.exports = {
-   cleanify,replaceInnerJSON,replaceJSON,streamRead,sortJSON,sortInnerJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+   cleanify,replaceInnerJSON,replaceJSON,streamRead,sortJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
