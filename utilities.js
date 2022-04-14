@@ -134,12 +134,18 @@ function isoLangMap(arrval,isocodes) {
       }
     }
   }
- // reads the text file and returns [originalarr, filtererdarr, cleanarr jsondata]
-// orignalarr  orignalfile as arr,
-// filtererdarr - No empty lines in it
+ // reads the text file and returns [originaljson, cleanedjson, cleanarr jsondata]
+// orignalarr  orignalfile as json,
+// cleanedjson - No empty lines in it & no numbers etc
 // jsondata - JSON data at the end of file, return undefined if doens't exists
 function readDBTxt(pathToFile) {
     var orgarr = fs.readFileSync(pathToFile).toString().split(/\r?\n/)
+        // find index of element which doesn't follow pattern of number | text
+        let indexProblem = orgarr.findIndex(e=>!/^\d+\.?\d*\s*\|\s*/.test(e) && !/^\s*$/.test(e))
+        if(indexProblem != -1){
+          logmsg("problem at index "+indexProblem+" in file "+path.basename(pathToFile)+" skipping this")
+          return
+        }
     // now remove all lines with empty strings or spaces or tabs
     // https://stackoverflow.com/a/281335
     // return elememnt only if they are not spaces/tabs and emptyline
@@ -149,14 +155,80 @@ function readDBTxt(pathToFile) {
     // If the json exists, then Remove the json from the file
     if (Array.isArray(temp))
         orgarr = orgarr.slice(0, temp[1])
+        // convert it into json for ease
+        var orgjson = orgarr.map(e=>[e.split('|')[0].trim(),e.split('|').slice(1).join(' ').trim()])
+        orgjson = Object.fromEntries(orgjson)
        // validates the translation for mistakes such as extra newline etc and corrects it and clean the translation from any number patterns ,etc
-       filterarr = orgarr.filter(elem => !/^\s*$/.test(elem))
+       cleanjson = validateCleanTrans(orgjson)
   // If the json exists then return json with the array
   if (Array.isArray(temp))
-      return [orgarr, filterarr , temp[0]]
+      return [orgjson, cleanjson , temp[0]]
   // return without json
-  return [orgarr, filterarr]
+  return [orgjson, cleanjson]
   } 
+
+
+function validateCleanTrans(json) {
+  // remove empty values from json
+  Object.keys(json).forEach(k => !obj[k] && delete obj[k]);
+  return cleanTrans(json)
+
+}
+
+// Cleaning translation from numbers, special symbols etc
+function cleanTrans(json) {
+  for (let key of Object.keys(json)) {
+    // https://en.wikipedia.org/wiki/List_of_Unicode_characters#Basic_Latin
+    // This will remove all special symbols and numbers from starting and ending of verse
+    json[key] = json[key].replace(/^[\u0020-\u0040|\u005b-\u0060|\u007b-\u007e|\s|\n|\r]{1,20}/, " ").replace(/^\s*\w{1}\s*(\.|\)|\}|\>|\])+[\u0020-\u0040|\u005b-\u0060|\u007b-\u007e|\s|\n|\r]{0,7}/i, " ").replace(/[\u0020-\u0040|\u005b-\u0060|\u007b-\u007e|\s|\n|\r]{1,15}$/, " ").replace(/[\r\n]/g, " ").replace(/\s\s+/g, " ").trim()
+    // Checking partially open/close bracket exists or not at begninning of verse
+    var bracket1 = json[key].match(/^[^\[|\(|\<|\{]+(\]|\)|\>|\})/)
+    // Checking partially open/close bracket exists or not at end of verse
+    var bracket2 = json[key].match(/(\[|\(|\<|\{)[^\]|\)|\>|\}]+$/)
+
+    // closing partially open/close bracket in the verse
+    // closing partially open/close bracket at the beginning of verse
+    if (bracket1)
+      json[key] = getOppoBracket(bracket1[0].slice(-1)) + json[key]
+    // closing partially open/close bracket at the end of verse
+    if (bracket2)
+      json[key] = json[key] + getOppoBracket(bracket2[0].slice(0, 1))
+  }
+  return json
+}
+
+// returns opposite bracket
+function getOppoBracket(str) {
+  switch (str) {
+    case '(':
+      return ')'
+    case ')':
+      return '('
+    case '<':
+      return '>'
+    case '>':
+      return '<'
+    case '[':
+      return ']'
+    case ']':
+      return '['
+    case '{':
+      return '}'
+    case '}':
+      return '{'
+    default:
+      return ''
+  }
+}
+
+// Checks for duplicate files in the database
+function checkduplicateTrans(json) {
+  for (var filename of fs.readdirSync(linebylineDir)) {
+    if (cleanify(Object.values(json).join('\n')).includes(cleanify(jsondb[filename]['snippet'])))
+      return filename
+  }
+}
+
 // function which checks whether a string is valid json or not
 function isValidJSON(str) {
     try {
