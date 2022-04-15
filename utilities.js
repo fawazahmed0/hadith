@@ -292,6 +292,7 @@ function normalizeDecimals(json){
   json = sortJSON(json)
   let myarr = Object.entries(json).map(e=>[parseInt(e[0]),e[1]])
   let duplicates = myarr.map(e=>e[0]).filter((e, i, a) => a.indexOf(e) !== i) 
+  duplicates = [...new Set(duplicates)]
   for(let val of duplicates){
 
     let count = 1
