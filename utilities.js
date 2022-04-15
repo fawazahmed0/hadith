@@ -56,7 +56,7 @@ function renameInnerJSONKey(obj, oldKey, newKey){
       let objectKeys = Object.keys(jsonObj)
       // sort numbers properly
       if(!objectKeys.some(isNaN))
-      objectKeys.sort((a, b) => a-b)
+      objectKeys.sort((a, b) => parseFloat(a)-parseFloat(b))
       else
       objectKeys.sort()
 
