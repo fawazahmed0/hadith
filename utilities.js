@@ -146,8 +146,10 @@ function readDBTxt(pathToFile) {
         // convert it into json for ease
         var orgjson = orgarr.map(e=>[e.split('|')[0].trim(),e.split('|').slice(1).join(' ').trim()])
         orgjson = Object.fromEntries(orgjson)
-       // validates the translation for mistakes such as extra newline etc and corrects it and clean the translation from any number patterns ,etc
+       // remove empty lines from json
        cleanjson = validateCleanTrans(orgjson)
+       //sort & normalize the decimals in json
+       cleanjson = normalizeDecimals(cleanjson)
   // If the json exists then return json with the array
   if (Array.isArray(temp))
       return [orgjson, cleanjson , temp[0]]
@@ -286,9 +288,28 @@ async function streamRead(pathtofile, start, end) {
   return data
 }
 
+function normalizeDecimals(json){
+  json = sortJSON(json)
+  let myarr = Object.entries(json).map(e=>[parseInt(e[0]),e[1]])
+  let duplicates = myarr.map(e=>e[0]).filter((e, i, a) => a.indexOf(e) !== i) 
+  for(let val of duplicates){
 
+    let count = 1
+    for(let i=0;i<myarr.length;i++){
+      if(myarr[i][1]==val){
+        myarr[i][1]+=parseFloat(count*0.01)
+        myarr[i][1] = myarr[i][1].toFixed(2)
+        count++;
+
+      }
+    }
+  }
+
+  return Object.fromEntries(myarr)
+
+}
 
 
 module.exports = {
-   cleanify,replaceInnerJSON,replaceJSON,streamRead,sortJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
+  normalizeDecimals, cleanify,replaceInnerJSON,replaceJSON,streamRead,sortJSON,getJSONKeyByValue,renameInnerJSONKey,saveJSON, renameJSONKey,isObject,capitalize,getJSON,getJSONInArray,dirCheck,isoLangMap,readDBTxt,isValidJSON,cleanifyObject,logmsg
 };
