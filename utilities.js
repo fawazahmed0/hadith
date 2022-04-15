@@ -297,9 +297,9 @@ function normalizeDecimals(json){
 
     let count = 1
     for(let i=0;i<myarr.length;i++){
-      if(myarr[i][1]==val){
-        myarr[i][1]+=parseFloat(count*0.01)
-        myarr[i][1] = myarr[i][1].toFixed(2)
+      if(myarr[i][0]==val){
+        myarr[i][0]+=parseFloat(count*0.01)
+        myarr[i][0] = myarr[i][0].toFixed(2)
         count++;
 
       }
