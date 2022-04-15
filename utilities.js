@@ -227,7 +227,7 @@ function cleanifyObject(jsondata) {
     //https://stackoverflow.com/a/54985484/2437224
     var newjson = Object.fromEntries(
       Object.entries(jsondata).map(([k, v]) => {
-        if (v != undefined && v)
+        if (v != undefined && typeof v !== 'boolean' && v)
           return ["" + k.replace(/[^A-Za-z]+/gi, "").trim().toLowerCase(), "" + v.replace(/\s\s+/gi, " ").trim()]
         return ["", ""]
       })
