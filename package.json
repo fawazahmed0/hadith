@@ -1,0 +1,20 @@
+{
+  "name": "hadith",
+  "version": "1.0.0",
+ "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fawazahmed0/hadith.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fawazahmed0/hadith/issues"
+  },
+  "homepage": "https://github.com/fawazahmed0/hadith#readme"
+}
