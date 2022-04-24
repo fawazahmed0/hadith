@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "start": "docusaurus start docusaurusdir",
-    "build": "docusaurus build docusaurusdir",
+    "build": "docusaurus build --out-dir docs docusaurusdir",
     "deploy": "docusaurus deploy --out-dir docs docusaurusdir",
     "clear": "docusaurus clear docusaurusdir",
     "serve": "docusaurus serve docusaurusdir",
