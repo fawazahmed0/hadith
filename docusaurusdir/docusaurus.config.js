@@ -3,7 +3,6 @@
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'My Site',
@@ -113,6 +112,21 @@ const config = {
         darkTheme: darkCodeTheme,
       },
     }),
+    plugins: [
+      function customWebpackConfig() {
+        return {
+          name: 'custom-webpack-config',
+          configureWebpack(config, isServer, utils){
+            return {
+              experiments:{
+              topLevelAwait: true,
+            }
+          };
+        
+          },
+        }
+      }
+    ]
 };
 
 module.exports = config;
