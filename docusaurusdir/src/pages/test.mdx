@@ -1,13 +1,14 @@
-import TOCInline from '@theme/TOCInline';
-import CodeBlock from '@theme/CodeBlock';
+---
+title: Markdown page example
+---
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
+
+if(useIsBrowser())
 export const test = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@latest/editions.json').then(res => res.json());
 
 
-<CodeBlock className="language-json">{JSON.stringify(test, null, 2)}</CodeBlock>
-
-The front matter of this page:
 
 
 
-<p>The title of this page is: <b>{contentTitle}</b></p>
+
