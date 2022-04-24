@@ -2,7 +2,6 @@
 title: Markdown page example
 ---
 import CodeBlock from '@theme/CodeBlock';
-import useIsBrowser from '@docusaurus/useIsBrowser';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 export const test = ExecutionEnvironment.canUseDOM ? (await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@latest/editions.json').then(res => res.json()) ) :{"hel":'f'};
 
