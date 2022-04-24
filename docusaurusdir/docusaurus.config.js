@@ -8,12 +8,12 @@ const config = {
   title: 'My Site',
   tagline: 'Dinosaurs are cool',
   url: 'https://fawazahmed0.github.io',
-  baseUrl: 'hadtih',
+  baseUrl: '/hadith/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'fawazahmed0', // Usually your GitHub org/user name.
-  projectName: 'hadtih', // Usually your repo name.
+  projectName: 'hadith', // Usually your repo name.
   deploymentBranch:'main',
 
 
