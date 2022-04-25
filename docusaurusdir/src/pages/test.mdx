@@ -1,10 +1,15 @@
----
-title: Markdown page example
----
-import CodeBlock from '@theme/CodeBlock';
-import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
-export const test = ExecutionEnvironment.canUseDOM ? (await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@latest/editions.json').then(res => res.json()) ) :{"hel":'f'};
+## Embedding svelte inside a mdx file
+
+The following content renders the svelte component - trak.svelte below.
+
+import toReact from "svelte-adapter/react";
+import trak from './trak.svelte';
+
+export const baseStyle = {
+  width: "100%"
+};
+
+export const Trakdata = toReact(trak, baseStyle, "div");
 
 
-<CodeBlock className="language-json">{JSON.stringify(test, null, 2)}</CodeBlock>
-
+<Trakdata />
