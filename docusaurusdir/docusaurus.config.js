@@ -127,7 +127,8 @@ const config = {
         
           },
         }
-      }
+      },
+      "docusaurus-plugin-svelte"
     ]
 };
 
