@@ -21,7 +21,7 @@ async function test(){
 
         let myarr = []
         let arabicSelector = '.section1 p[class="MsoNormal"][dir="RTL"]:not([align="right"])'
-        let turkishSelector = 'p[class="MsoNormal"]:not([align="right"][dir="RTL"])'
+        let turkishSelector = 'p[class="MsoNormal"]:not([dir="RTL"]):not([align="right"])'
         
         while(document.body.contains(document.querySelector(arabicSelector)) && document.body.contains(document.querySelector(`${arabicSelector} + ${turkishSelector}`))){
             let araElem = document.querySelector(arabicSelector)
