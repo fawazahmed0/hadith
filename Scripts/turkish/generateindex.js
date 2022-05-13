@@ -1,7 +1,7 @@
 var fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
-let bookArr = ['abudawud','bukhari','ibnmajah','malik','nasai','tirmidhi']
+let bookArr = ['muslim']
 async function test(){
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
@@ -11,7 +11,7 @@ async function test(){
 
       let middlename = 'arabic'
     for(let file of bookArr){
-        let indexname = file + middlename+'scrapped3'
+        let indexname = file + middlename+'4'
 
       let filePath1 = path.join(mypath,file+'turkish.txt')
       let filePath2 = path.join(mypath,file+'arabic.txt')
