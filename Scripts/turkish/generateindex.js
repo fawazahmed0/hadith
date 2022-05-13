@@ -48,7 +48,6 @@ async function test(){
             let data = await res.json()
  
             hadithno = data.hits.hits[0]._source.column1
-            hadithno = alpha2num(hadithno)
         //    if(Math.abs(hadithno - lasthadithno) > 10)
         //    throw 'issue with hadith no '+hadithno+ " diff is "+(hadithno - lasthadithno)
          //   lasthadithno = hadithno
