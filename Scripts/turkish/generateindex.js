@@ -1,3 +1,5 @@
+// generate index's curl -k -u elastic:XrD5eXIoXYTzz*Yd0bRx https://localhost:9200/_cat/indices
+
 var fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
