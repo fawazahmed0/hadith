@@ -5,8 +5,8 @@ let fs = require('fs');
 
 async function test(){
 
-    let cleanPath = path.join(__dirname,'cleaned')
-    let apiFilePath = path.join(__dirname,'site')
+    let cleanPath = path.join(__dirname,'compiled2')
+    let apiFilePath = path.join(__dirname,'apifiles')
     for(let file of fs.readdirSync(cleanPath)){
 
         let cleanArr = fs.readFileSync(path.join(cleanPath,file)).toString().trim().split(/\r?\n/).filter(elem => !/^\s*$/.test(elem))
