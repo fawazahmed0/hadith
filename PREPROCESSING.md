@@ -2,7 +2,8 @@ I first scrapped the grades from al-maktaba.org (did an arabic keyword google se
 
 for example for urdu, I scrapped urdu & arabic, similarly did for other languagges
 
-I then indexed english & arabic into elastic search. (this is for those, which doesn't follow correct numbering, we need to bring it to standard numbering, so that we can attach the correct grades)
+I then indexed english & arabic into elastic search(index without diacritices). (this is for those, which doesn't follow correct numbering, we need to bring it to standard numbering, so that we can attach the correct grades)
+(search without diacritices to avoid issues, see https://stackoverflow.com/questions/990904/remove-accents-diacritics-in-a-string-in-javascript )
 
 Then performed the search to get the correct referece number, this reference number will be used to map the grades, because grades are mapped to arabic reference numbeing (same one at sunnah.com)
 
