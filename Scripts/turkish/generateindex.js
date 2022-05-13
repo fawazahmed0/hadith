@@ -1,4 +1,5 @@
-// generate index's curl -k -u elastic:XrD5eXIoXYTzz*Yd0bRx https://localhost:9200/_cat/indices
+// get list of indices in elasticsearch
+// curl -k -u elastic:XrD5eXIoXYTzz*Yd0bRx https://localhost:9200/_cat/indices
 
 var fetch = require('node-fetch');
 const fs = require('fs');
