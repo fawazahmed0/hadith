@@ -18,7 +18,7 @@ async function test(){
     
     for(let filePath of filesArr){
 
-        if(!filePath.includes('newly') || !filePath.includes('turkish'))
+        if(!filePath.includes('compiled2') || !filePath.includes('turkish'))
         continue
 
         let str = fs.readFileSync(filePath).toString()
