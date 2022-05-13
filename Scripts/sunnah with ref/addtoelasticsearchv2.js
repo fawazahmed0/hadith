@@ -1,25 +1,24 @@
 var fetch = require('node-fetch');
-const fs = require('fs');
-const path = require('path');
 
 async function test(){
   // https://stackoverflow.com/questions/52478069/node-fetch-disable-ssl-verification
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-let mypath =  path.join(__dirname,'scrapped')
-let files = fs.readdirSync(mypath)
-// Use bulk api instead for huge data
-for(let file of files){
-  let filePath = path.join(mypath,file)
-    console.log(file)
-    let str = fs.readFileSync(filePath).toString()
-    let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
-    let indexname = file.replace(/\.txt$/,'') + '5'
-    for(let val of arr){
+let editionsJSON = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@latest/editions.min.json').then(res=>res.json())
+
+let bareEditions = Object.keys(editionsJSON)
+
+let langMap = {'ara':'arabic','eng':'english'}
+
+for(let iso of Object.keys(langMap)){
+  for(let bareEdition of bareEditions){
+    let data = await fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@latest/editions/${iso}-${bareEdition}.min.json`).then(res=>res.json())
+    let indexname = `${bareEdition}${langMap[iso]}5`
+
+    for(let hadith of data.hadiths){
       try{
-      let [val1,val2] = val.split(' | ')
       let myjson = {
-        "column1":val1,
-        "column2":val2
+        "column1":hadith.hadithnumber,
+        "column2":hadith.text.normalize("NFD").replace(/\p{Diacritic}/gu, "")
       }
       var requestOptions = {
         method: 'POST',
@@ -29,19 +28,16 @@ for(let file of files){
         redirect: 'follow',
         body:JSON.stringify(myjson)
       };
-  
-
-      let res = await fetch("https://localhost:9200/"+indexname+"/_doc", requestOptions)
-      //let data = response.json()
+      let res = await fetch(`https://localhost:9200/${indexname}/_doc`, requestOptions)
       if(!res.ok)
-      console.log('issue with file',file,val)
-    }catch(e){console.error(e)}
+      console.log('issue with file',myjson)
 
+    }catch(e){console.error(e)}
     }
 
-    //console.log(file,arr.slice(0,10))
-    // fs.writeFileSync(filePath,arr.join('\n').trim())
+  }
 }
+
 }
 
 
