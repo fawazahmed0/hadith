@@ -13,7 +13,7 @@ async function test(){
         continue
        
             let str = fs.readFileSync(filePath).toString()
-            let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim())
+            let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem) && !/^\s*\d+\s*\|\s*$/.test(elem)).map(e=>e.trim())
             let num = 50
             for(let i=0;i<arr.length;i++){
                 try{
