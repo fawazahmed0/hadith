@@ -4,7 +4,7 @@
 var fetch = require('node-fetch');
 const fs = require('fs');
 const path = require('path');
-let bookArr = ['muslim']
+let bookArr = ['abudawud','bukhari','ibnmajah','malik','nasai','tirmidhi','muslim']
 async function test(){
     process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
 
@@ -14,7 +14,7 @@ async function test(){
 
       let middlename = 'arabic'
     for(let file of bookArr){
-        let indexname = file + middlename+'4'
+        let indexname = file + middlename+'5'
 
       let filePath1 = path.join(mypath,file+'turkish.txt')
       let filePath2 = path.join(mypath,file+'arabic.txt')
@@ -31,7 +31,7 @@ async function test(){
                 "query": {
                   "match": {
                       // 29-)
-                    "column2": arr2[i].replace(/^\d+\-\)/g, '').trim()
+                    "column2": arr2[i].normalize("NFD").replace(/\p{Diacritic}/gu, "").trim()
                   }
                 }
               }
