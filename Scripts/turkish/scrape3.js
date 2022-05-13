@@ -5,8 +5,9 @@ const path = require('path');
 async function test(){
   const browser = await firefox.launch({ headless: true });
   const page = await browser.newPage();
-  // let urlParts = ['dvd','buh','mus','tir','muvat','NES-KÜB','İBN-M']
-   let urlParts = ['NES-KÜB']
+   let urlPartsObj = {'dvd':'abudawud','buh':'bukhari','mus':'muslim','tir':'tirmidhi','muvat':'malik','NES-KÜB':'nasai','İBN-M':'ibnmajah'}
+   let urlParts = Object.keys(urlPartsObj)
+  // let urlParts = ['NES-KÜB']
   //let urlParts = ['buh','mus','tir','muvat','NES-KÜB','İBN-M']
   let previousURL;
   let currentURL;
@@ -68,8 +69,8 @@ currentURL = await page.url();
 
   }
 
-fs.writeFileSync(path.join(__dirname, `${urlPart}arabic.txt`), bigarr.map(e=>e[0]).join('\n').trim())
-fs.writeFileSync(path.join(__dirname, `${urlPart}turkish.txt`), bigarr.map(e=>e[1]).join('\n').trim())
+fs.writeFileSync(path.join(__dirname, `${urlPartsObj.urlPart}arabic.txt`), bigarr.map(e=>e[0]).join('\n').trim())
+fs.writeFileSync(path.join(__dirname, `${urlPartsObj.urlPart}turkish.txt`), bigarr.map(e=>e[1]).join('\n').trim())
   }
 
 
