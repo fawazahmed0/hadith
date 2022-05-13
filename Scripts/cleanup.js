@@ -19,11 +19,12 @@ async function test(){
             arr = arr.map(e=>e.replace(/(^\d+\s*\|\s*)\d+\-\)/,'$1'))
             //arr.sort((a, b) => parseFloat(a.match(/\d+\.?\d*/)[0]) - parseFloat(b.match(/\d+\.?\d*/)[0]))
             
-         //   let duplicates = arr.map(e=>e.match(/\d+\.?\d*/)[0]).filter((e, i, a) => a.indexOf(e) !== i)
-         //  for(let i=0;i<arr.length;i++){
-       //         if(duplicates.includes(arr[i].match(/\d+\.?\d*/)[0]))
-      //          arr[i] = ''
-      //      }
+            let duplicates = arr.map(e=>e.match(/\d+\.?\d*/)[0]).filter((e, i, a) => a.indexOf(e) !== i)
+           for(let i=0;i<arr.length;i++){
+                // if same number exists in the line, then it's index is correct, we will not remove it
+                if(duplicates.includes(arr[i].match(/\d+\.?\d*/)[0]) && !arr[i].match(/\d+\.?\d*/g).slice(1).includes(arr[i].match(/\d+\.?\d*/)[0]) )
+                arr[i] = ''
+            }
        
             fs.writeFileSync(filePath,arr.filter(elem => !/^\s*$/.test(elem)).map(e=>e.trim()).join('\n').replace(/\s\s+/g,' ').trim())
         
