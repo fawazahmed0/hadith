@@ -69,8 +69,8 @@ currentURL = await page.url();
 
   }
 
-fs.writeFileSync(path.join(__dirname, `${urlPartsObj.urlPart}arabic.txt`), bigarr.map(e=>e[0]).join('\n').trim())
-fs.writeFileSync(path.join(__dirname, `${urlPartsObj.urlPart}turkish.txt`), bigarr.map(e=>e[1]).join('\n').trim())
+fs.writeFileSync(path.join(__dirname, `${urlPartsObj[urlPart]}arabic.txt`), bigarr.map(e=>e[0]).join('\n').trim())
+fs.writeFileSync(path.join(__dirname, `${urlPartsObj[urlPart]}turkish.txt`), bigarr.map(e=>e[1]).join('\n').trim())
   }
 
 
