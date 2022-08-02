@@ -1,0 +1,17 @@
+{
+  "name": "gscrap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "google-play-scraper": "^9.0.2"
+  },
+  "devDependencies": {
+    "playwright": "^1.24.2"
+  }
+}
