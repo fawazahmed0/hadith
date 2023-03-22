@@ -1,5 +1,3 @@
-var fetch = require('node-fetch');
-
 async function test(){
   // https://stackoverflow.com/questions/52478069/node-fetch-disable-ssl-verification
 process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
@@ -7,28 +5,29 @@ let editionsJSON = await fetch('https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-a
 
 let bareEditions = Object.keys(editionsJSON)
 
-let langMap = {'ara':'arabic','eng':'english'}
+let langMap = {'ara':'arabic','eng':'english', 'urd':'urdu', 'ben':'bengali'}
 
 for(let iso of Object.keys(langMap)){
   for(let bareEdition of bareEditions){
     let data = await fetch(`https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@latest/editions/${iso}-${bareEdition}.min.json`).then(res=>res.json())
-    let indexname = `${bareEdition}${langMap[iso]}5`
+    let indexname = `${bareEdition}${langMap[iso]}`
+    console.log('index name',indexname)
 
     for(let hadith of data.hadiths){
       try{
       let myjson = {
         "column1":hadith.hadithnumber,
-        "column2":hadith.text.normalize("NFD").replace(/\p{Diacritic}/gu, "")
+        "column2":hadith.text.normalize("NFD").replace(/\p{Diacritic}|\p{Mark}|\p{Extender}|\p{Bidi_Control}/gu, "")
       }
       var requestOptions = {
         method: 'POST',
-        headers: {"Authorization": "Basic ZWxhc3RpYzpYckQ1ZVhJb1hZVHp6KllkMGJSeA==",
+        headers: {"Authorization": "Basic ZWxhc3RpYzpXekswNXRTVVh4UzZibUlZRHhzOQ==",
                   "Content-Type": "application/json",
                   "Accept": "application/json"},
         redirect: 'follow',
         body:JSON.stringify(myjson)
       };
-      let res = await fetch(`https://localhost:9200/${indexname}/_doc`, requestOptions)
+      let res = await fetch(`https://192.168.1.192:9200/${indexname}/_doc`, requestOptions)
       if(!res.ok)
       console.log('issue with file',myjson)
 
