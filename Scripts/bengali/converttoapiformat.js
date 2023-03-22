@@ -9,9 +9,9 @@ async function begin(){
 
   let files = await fg([path.posix.join('.','jsonnew','**')], { dot: true });
 
-  for(let jsonfile of files){
+  for(let jsonfile of files.filter(e=>e.endsWith('.json'))){
    let data =  await fs.readFile(jsonfile, {encoding:'utf8'})
-   data = JSON.parse(data)
+   data = JSON.parse(data).filter(e=>e.newhadithno!==undefined)
 
    let arr = []
  
@@ -22,7 +22,7 @@ async function begin(){
 
    }
    let bareEdition = jsonfile.split(path.posix.sep).at(-1).replace(/\.json$/gi, '')
-   await fs.writeFile(path.join(__dirname,'jsonnew',`ben-${bareEdition}.txt`), arr.map(e=>e.replace(/\s\s+/gi, ' ').trim()).join('\n'))
+   await fs.writeFile(path.join(__dirname,'jsonnew',`ben-${bareEdition}.txt`), arr.map(e=>e.replace(/\r?\n/gi, ' ' ).replace(/\s\s+/gi, ' ').trim()).join('\n'))
   }
 
   
