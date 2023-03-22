@@ -8,7 +8,7 @@ async function test() {
     let files = await fg([path.posix.join('.', 'jsonnew', '**')], { dot: true });
 
 
-    for (let jsonfile of files) {
+    for (let jsonfile of files.reverse()) {
 
         console.log(jsonfile)
 
@@ -42,7 +42,7 @@ async function test() {
             let resdata = await res.json()
 
 
-            let columns = resdata.hits.hits.filter(e => e._score > 20 && Math.abs(lasthadithno-e._source.column1) <10).slice(0, 3).map(e => e._source.column1)
+            let columns = resdata.hits.hits.filter(e => e._score > 20 && Math.abs(lasthadithno-e._source.column1) <50).slice(0, 3).map(e => e._source.column1)
 
             if (lasthadithno != 1)
                 columns = columns.filter(e => e != lasthadithno)

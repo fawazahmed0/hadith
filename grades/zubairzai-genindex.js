@@ -7,7 +7,7 @@ async function test(){
     let folders = fs.readdirSync(mypath).filter(e=>e!='fetc.js')
     let indexmap = {"abudawood":"abudawud","ibnemaja":"ibnmajah","nasai":"nasai","tirmizi":"tirmidhi"}
 
-    for(let folder of folders){
+    for(let folder of folders.reverse()){
         let files = fs.readdirSync(path.join(mypath,folder))
         let sortedFiles = files.map(e=>parseInt(e.split('.')[0])).sort((a, b) => (a - b))
         let lasthadithno = 1
@@ -43,7 +43,7 @@ async function test(){
             let resdata = await res.json()
 
 
-            let columns = resdata.hits.hits.filter(e => e._score > 20 &&  lasthadithno-e._source.column1>=0 && lasthadithno-e._source.column1 <10).slice(0, 3).map(e => e._source.column1)
+            let columns = resdata.hits.hits.filter(e => e._score > 20 &&  Math.abs(lasthadithno-e._source.column1)<50).slice(0, 3).map(e => e._source.column1)
 
             if (lasthadithno != 1)
                 columns = columns.filter(e => e != lasthadithno)
