@@ -43,7 +43,7 @@ async function test(){
             let resdata = await res.json()
 
 
-            let columns = resdata.hits.hits.filter(e => e._score > 20 &&  Math.abs(lasthadithno-e._source.column1)<50).slice(0, 3).map(e => e._source.column1)
+            let columns = resdata.hits.hits.filter(e => e._score > resdata.hits.max_score*0.75).slice(0, 3).map(e => e._source.column1)
 
             if (lasthadithno != 1)
                 columns = columns.filter(e => e != lasthadithno)
