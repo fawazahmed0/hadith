@@ -10,7 +10,7 @@ async function test(){
     for(let folder of folders.reverse()){
         let files = fs.readdirSync(path.join(mypath,folder))
         let sortedFiles = files.map(e=>parseInt(e.split('.')[0])).sort((a, b) => (a - b))
-        let lasthadithno = 1
+      
         console.log(folder)
 
         let myjson = {}
@@ -42,25 +42,18 @@ async function test(){
             let res = await fetch("https://192.168.1.192:9200/" + indexname + "/_search", requestOptions)
             let resdata = await res.json()
 
-
-            let columns = resdata.hits.hits.filter(e => e._score > resdata.hits.max_score*0.75).slice(0, 3).map(e => e._source.column1)
-
-            if (lasthadithno != 1)
-                columns = columns.filter(e => e != lasthadithno)
-
             let grade = global[folder]?.hukam || global[folder]?.description || ''
 
-            if (columns.length == 0 || !grade)
-                continue
-               
 
-            let newhadithno = columns.reduce((prev, curr) => Math.abs(curr - lasthadithno) < Math.abs(prev - lasthadithno) ? curr : prev);
+            let newhadithno = resdata?.hits?.hits?.[0]?._source?.column1  
+            if(!newhadithno || !grade)
+            continue
 
             console.log(newhadithno)
 
             myjson[newhadithno] = grade
 
-            lasthadithno = newhadithno
+ 
 
 
 

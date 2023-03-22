@@ -15,7 +15,7 @@ async function test() {
         let data = await fs.readFile(jsonfile, { encoding: 'utf8' })
         data = JSON.parse(data)
 
-        let lasthadithno = 1
+   
 
 
         for (let i = 0; i < data.length; i++) {
@@ -42,21 +42,19 @@ async function test() {
             let resdata = await res.json()
 
 
-            let columns = resdata.hits.hits.filter(e => e._score > resdata.hits.max_score*0.75).slice(0, 3).map(e => e._source.column1)
-
-            if (lasthadithno != 1)
-                columns = columns.filter(e => e != lasthadithno)
-
-            if (columns.length == 0)
-                continue
 
 
-            data[i]["newhadithno"] = columns.reduce((prev, curr) => Math.abs(curr - lasthadithno) < Math.abs(prev - lasthadithno) ? curr : prev);
+            let newhadithno = resdata?.hits?.hits?.[0]?._source?.column1    
+
+            if(!newhadithno)
+            continue
+
+            data[i]["newhadithno"] = newhadithno
 
             console.log(data[i]["newhadithno"]);
 
 
-            lasthadithno = data[i]["newhadithno"]
+     
 
         }
 
