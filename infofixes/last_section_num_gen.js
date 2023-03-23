@@ -67,4 +67,16 @@ async function begin(){
 
 }
 
+function removeOutliers(data){
+data = data.sort((a,b)=>a-b)
+let len = data.length-1
+let from = data[Math.round(len*0.25)]
+let to = data[Math.round(len*0.75)]
+
+let min = from*0.70
+let max = to*1.30
+console.log(from,to,min,max,Math.min(...data),Math.max(...data))
+return data.filter(e=>min<=e && e<=max)
+}
+
 begin()
