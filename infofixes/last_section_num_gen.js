@@ -42,8 +42,8 @@ async function begin(){
 
         sections[bareEdition][i] = {hadithnumber_first:Math.min(...hadithnumberArr),
              hadithnumber_last:Math.max(...hadithnumberArr),
-             arabicnumber_first:Math.min(...arabicnumberArr),
-             arabicnumber_last:Math.max(...arabicnumberArr),
+             arabicnumber_first:parseFloat(arabicnumberArr[0]),
+             arabicnumber_last:parseFloat(arabicnumberArr.at(-1)),
             }
 
 
