@@ -1,6 +1,6 @@
 const fs = require('fs/promises')
 const path = require('path')
-const papa = require("papaparse");
+const converter = require('json-2-csv');
 async function begin(){
 
   
@@ -30,7 +30,10 @@ async function begin(){
          arr.push(json)
         }
 
-        await fs.writeFile(path.join(__dirname, 'csv', file.replace('.json','.csv')), papa.unparse(arr))
+        //if(file.includes('eng-muslim'))
+        //console.log((await converter.json2csv(arr)))
+
+        await fs.writeFile(path.join(__dirname, 'csv', file.replace('.json','.csv')), (await converter.json2csv(arr,{emptyFieldValue:''})))
 
         
 
