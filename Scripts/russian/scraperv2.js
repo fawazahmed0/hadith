@@ -23,7 +23,7 @@ async function begin() {
 
      // change arabic numbers to english numbers 
      column = column.map(e=>LangNum2Num(e, '٠', 0)).reverse()
-     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>e.matchAll(/(?<num>\d+)\s*(—|-|:|\[|\])/dgsi)).map(Array.from)
+     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>Array.from(e.matchAll(/(?<num>\d+)\s*(—|-|:|\[|\])/dgsi)))
 
      for(let resultOneIndex=0;resultOneIndex<columnRegexResultOne.length;resultOneIndex++){
         let resultOne = columnRegexResultOne[resultOneIndex]
@@ -63,7 +63,7 @@ async function begin() {
     }
 
     await fs.writeFile(path.join(__dirname, mainLink.split('/').at(-1)+'.json'), JSON.stringify(json,null,4))
-
+    await browser.close();
 }
 
 begin()
