@@ -3,7 +3,7 @@ const fs = require('fs/promises')
 const path = require('path')
 
 async function begin() {
-    const browser = await chromium.launch({headless:false});
+    const browser = await chromium.launch({headless:true});
     const page = await browser.newPage();
 
     let bigArr = []
@@ -13,7 +13,6 @@ async function begin() {
 
     for(let i=1;i<=55;i++){
         await page.goto(`${mainLink}?action=viewhadith&chapterno=${i}&min=0&show=1000`)
-        await page.waitForTimeout(20_000)
         let data = await page.evaluate(() => Array.from(document.querySelectorAll('#hadithview')).map(e=>
         [
             e?.querySelector('p[dir="ltr"][align="left"]')?.textContent,
