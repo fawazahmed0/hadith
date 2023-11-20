@@ -5,7 +5,7 @@ const path = require('path')
 async function begin() {
     const browser = await firefox.launch({headless:true});
     const page = await browser.newPage();
-    let mainLink = 'https://isnad.link/book/sahih-muslim'
+    let mainLink = 'https://isnad.link/book/sunan-at-tirmizi'
     await page.goto(mainLink)
     let links = await page.evaluate(()=> Array.from(document.querySelectorAll('body > section > div.container.book > div > div > ul > li > a')).map(e=>e.href))
     links = links.slice(1)
@@ -24,7 +24,7 @@ async function begin() {
 
      // change arabic numbers to english numbers 
      column = column.map(e=>LangNum2Num(e, '٠', 0)).reverse()
-     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>Array.from(e.matchAll(/\[(?<num>\d+)\s*(:|\[|\]|\p{Pd})/dugsi)))
+     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>Array.from(e.matchAll(/(?<num>\d+)\s*(:|\[|\]|\p{Pd})/dugsi)))
 
      for(let resultOneIndex=0;resultOneIndex<columnRegexResultOne.length;resultOneIndex++){
         let resultOne = columnRegexResultOne[resultOneIndex]
