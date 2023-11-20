@@ -1,11 +1,11 @@
-const { chromium } = require('playwright');
+const { firefox } = require('playwright');
 const fs = require('fs/promises')
 const path = require('path')
 
 async function begin() {
-    const browser = await chromium.launch({headless:true});
+    const browser = await firefox.launch({headless:true});
     const page = await browser.newPage();
-    let mainLink = 'https://isnad.link/book/sahih-al-buhari'
+    let mainLink = 'https://isnad.link/book/sahih-muslim'
     await page.goto(mainLink)
     let links = await page.evaluate(()=> Array.from(document.querySelectorAll('body > section > div.container.book > div > div > ul > li > a')).map(e=>e.href))
     links = links.slice(1)
@@ -16,7 +16,7 @@ async function begin() {
     for(let link of links){
         await page.goto(link)
                 // remove all bab etc
-    await page.evaluate(()=> Array.from(document.querySelectorAll('body > section > div.container.articles > div > div.column.is-hidden-mobile > article > div > p:nth-child(1)')).map(e=>e.textContent=''))
+    //await page.evaluate(()=> Array.from(document.querySelectorAll('body > section > div.container.articles > div > div.column.is-hidden-mobile > article > div > p:nth-child(1)')).map(e=>e.textContent=''))
 
     let columns = await page.evaluate(()=> Array.from(document.querySelectorAll('.columns')).map(e=>e.querySelectorAll('.column')).filter(e=>e.length==2).slice(1).map(e=>Array.from(e).map(e=>e.textContent)))
 
@@ -24,7 +24,7 @@ async function begin() {
 
      // change arabic numbers to english numbers 
      column = column.map(e=>LangNum2Num(e, '٠', 0)).reverse()
-     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>Array.from(e.matchAll(/(?<num>\d+)\s*(:|\[|\]|\p{Pd})/dugsi)))
+     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>Array.from(e.matchAll(/\[(?<num>\d+)\s*(:|\[|\]|\p{Pd})/dugsi)))
 
      for(let resultOneIndex=0;resultOneIndex<columnRegexResultOne.length;resultOneIndex++){
         let resultOne = columnRegexResultOne[resultOneIndex]
@@ -32,7 +32,7 @@ async function begin() {
 
         let resultOneText = resultOne.input.slice(resultOne.index,columnRegexResultOne?.[resultOneIndex+1]?.index).trim()
 
-        if( /\d+.{0,10}باب/gi.test( removeDiacritics(resultOneText) ) )
+        if( /\d+.{0,10}(كتاب|باب)/gi.test( removeDiacritics(resultOneText) ) )
         continue
 
 
@@ -59,8 +59,7 @@ async function begin() {
         
 
     }
-   // if(count++==2)
-  //  break
+
 
     }
 
