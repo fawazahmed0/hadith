@@ -1,14 +1,15 @@
-const { firefox } = require('playwright');
+const { chromium } = require('playwright');
 const fs = require('fs/promises')
 const path = require('path')
 
 async function begin() {
-    const browser = await firefox.launch({headless:true});
+    const browser = await chromium.launch({headless:true});
     const page = await browser.newPage();
-    let mainLink = 'https://isnad.link/book/sunan-abu-dauda'
+    let mainLink = 'https://isnad.link/book/sahih-al-buhari'
     await page.goto(mainLink)
     let links = await page.evaluate(()=> Array.from(document.querySelectorAll('body > section > div.container.book > div > div > ul > li > a')).map(e=>e.href))
     links = links.slice(1)
+    // links = links.concat(['file:///C:/Users/nawaz/Downloads/bukha.mhtml'])
     let json = {}
     let count = 0
 
@@ -28,6 +29,7 @@ async function begin() {
      for(let resultOneIndex=0;resultOneIndex<columnRegexResultOne.length;resultOneIndex++){
         let resultOne = columnRegexResultOne[resultOneIndex]
         let numOne = resultOne.groups.num
+
         let resultOneText = resultOne.input.slice(resultOne.index,columnRegexResultOne?.[resultOneIndex+1]?.index).trim()
 
         if( /\d+.{0,10}باب/gi.test( removeDiacritics(resultOneText) ) )
@@ -61,6 +63,12 @@ async function begin() {
   //  break
 
     }
+
+    json = Object.fromEntries(
+        Object.entries(json).map(e=>[e[0],e[1].slice(0,2)]).sort((a,b)=>a[0]-b[0])
+      )
+
+
 
     await fs.writeFile(path.join(__dirname, mainLink.split('/').at(-1)+'.json'), JSON.stringify(json,null,4))
     await browser.close();
