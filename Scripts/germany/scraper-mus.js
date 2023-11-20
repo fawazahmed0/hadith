@@ -26,8 +26,6 @@ async function begin() {
 
         bigArr.push(data)
 
-        if(count++==2)
-        break
 
     }
 
