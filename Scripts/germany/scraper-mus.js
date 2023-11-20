@@ -3,11 +3,7 @@ const fs = require('fs/promises')
 const path = require('path')
 
 async function begin() {
-    const browser = await chromium.launchPersistentContext("C:\\Users\\nawaz\\AppData\\Local\\Google\\Chrome\\User Data",{
-        headless:false,
-        executablePath: "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe"
-    
-    });
+    const browser = await chromium.launch({headless:false});
     const page = await browser.newPage();
 
     let bigArr = []
