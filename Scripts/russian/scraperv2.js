@@ -23,7 +23,7 @@ async function begin() {
 
      // change arabic numbers to english numbers 
      column = column.map(e=>LangNum2Num(e, '٠', 0)).reverse()
-     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>Array.from(e.matchAll(/(?<num>\d+)\s*(—|-|:|\[|\])/dgsi)))
+     let [columnRegexResultOne, columnRegexResultTwo]= column.map(e=>Array.from(e.matchAll(/(?<num>\d+)\s*(:|\[|\]|\p{Pd})/dugsi)))
 
      for(let resultOneIndex=0;resultOneIndex<columnRegexResultOne.length;resultOneIndex++){
         let resultOne = columnRegexResultOne[resultOneIndex]
@@ -57,8 +57,8 @@ async function begin() {
         
 
     }
-    if(count++==2)
-    break
+   // if(count++==2)
+  //  break
 
     }
 
