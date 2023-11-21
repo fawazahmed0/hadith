@@ -5,3 +5,4 @@ run addtoelasticserchv2.js to generate the indices
 
 run Scripts/testsearch.js to see everything is working fine
 
+refer maphadithno.js to see how to map
