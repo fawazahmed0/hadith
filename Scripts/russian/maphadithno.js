@@ -22,7 +22,6 @@ async function begin(){
     lastHadithNo = hadithNo
     value.push(hadithNo)
     content[key] = value
-    break
   }
 
   await fs.writeFile(pathToFile, JSON.stringify(content, null, 4))
@@ -36,8 +35,7 @@ function getHadithNo(jsonSearchResult, lastHadithNo){
 
   return jsonSearchResult?.hits?.hits
   ?.map(e=>[e?._source?.column1, Math.abs(e?._source?.column1-lastHadithNo)]).
-  sort((a,b)=>a[1]-b[1])
-  .map(e=e[0])?.[0]
+  sort((a,b)=>a[1]-b[1])?.[0]?.[0]
 
 }
 
