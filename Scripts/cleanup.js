@@ -10,13 +10,13 @@ async function test(){
     
     for(let filePath of filesArr){
 
-        if( !filePath.includes('compiled2') || !filePath.includes('turkish') )
+        if( !filePath.includes('compiled4') )
             continue
             console.log(filePath)
             let str = fs.readFileSync(filePath).toString()
             let arr = str.split(/\r?\n/).filter(elem => !/^\s*$/.test(elem)).map(e=>e.split('|')[0].trim()+' | '+e.split('|').slice(1).join(' ').trim())
 
-            arr = arr.map(e=>e.replace(/(^\d+\s*\|\s*)\d+\-\)/,'$1'))
+            arr = arr.map(e=>e.replace(/(^\d+\s*\|\s*)\d+\-\)/,'$1').replace(/Шейх аль-Албани сказал:.*?$/gi, '') )
             //arr.sort((a, b) => parseFloat(a.match(/\d+\.?\d*/)[0]) - parseFloat(b.match(/\d+\.?\d*/)[0]))
             
           //  let duplicates = arr.map(e=>e.match(/\d+\.?\d*/)[0]).filter((e, i, a) => a.indexOf(e) !== i)
