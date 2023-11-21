@@ -1,0 +1,7 @@
+// For local environment download elasticsearch https://www.elastic.co/guide/en/elasticsearch/reference/current/zip-windows.html
+// disabled elasticsearch security in c\elasticsearch\config\elasticsaerch.yml by setting xpack.security.enabled: false
+
+run addtoelasticserchv2.js to generate the indices
+
+run Scripts/testsearch.js to see everything is working fine
+
