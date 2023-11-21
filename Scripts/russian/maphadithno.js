@@ -4,7 +4,7 @@ const path = require('path')
 
 async function begin(){
 
-  let fileName = 'bukhari.json'
+ for(let fileName of (await fs.readdir( path.join(__dirname, '.'))).filter(e=>/\.json/i.test(e) ) ){
   let indexName = `${fileName.replace(/\.json/i, '')}arabic`
   let pathToFile = path.join(__dirname, fileName)
   let content = await fs.readFile(pathToFile)
@@ -25,6 +25,9 @@ async function begin(){
   }
 
   await fs.writeFile(pathToFile, JSON.stringify(content, null, 4))
+
+
+ }
     
 
 
