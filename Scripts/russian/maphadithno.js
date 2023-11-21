@@ -12,7 +12,11 @@ async function begin(){
 
   let lastHadithNo = 0
 
+  
+
+  await fs.writeFile(path.join(__dirname, 'compiled4', fileName.replace(/\.json/i, '')+'.txt'), Object.entries(content).map(([key,value])=>`${key} | ${value[1]}`).join('\n'))
   for(let [key,value] of Object.entries(content)){
+    break
 
     let jsonSearchResult = await search(value?.[0], indexName)
     let hadithNo = await getHadithNo(jsonSearchResult, lastHadithNo)
@@ -24,7 +28,7 @@ async function begin(){
     content[key] = value
   }
 
-  await fs.writeFile(pathToFile, JSON.stringify(content, null, 4))
+ 
 
 
  }
