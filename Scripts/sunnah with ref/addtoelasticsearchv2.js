@@ -27,7 +27,7 @@ for(let iso of Object.keys(langMap)){
         redirect: 'follow',
         body:JSON.stringify(myjson)
       };
-      let res = await fetch(`https://192.168.1.192:9200/${indexname}/_doc`, requestOptions)
+      let res = await fetch(`http://localhost:9200/${indexname}/_doc`, requestOptions)
       if(!res.ok)
       console.log('issue with file',myjson)
 
