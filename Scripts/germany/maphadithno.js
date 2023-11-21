@@ -4,15 +4,18 @@ const path = require('path')
 
 async function begin(){
 
- for(let fileName of (await fs.readdir( path.join(__dirname, '.'))).filter(e=>/\.json/i.test(e) ) ){
+  let fileName = 'bukhari.json'
   let indexName = `${fileName.replace(/\.json/i, '')}arabic`
   let pathToFile = path.join(__dirname, fileName)
   let content = await fs.readFile(pathToFile)
-  content = JSON.parse(content)
+  content = JSON.parse(content).flat()
 
   let lastHadithNo = 0
 
-  for(let [key,value] of Object.entries(content)){
+  let bigArr = []
+
+  for(let value of content){
+
 
     let jsonSearchResult = await search(value?.[0], indexName)
     let hadithNo = await getHadithNo(jsonSearchResult, lastHadithNo)
@@ -21,14 +24,12 @@ async function begin(){
     continue
     lastHadithNo = hadithNo
     value.push(hadithNo)
-    content[key] = value
+    bigArr.push(value)
   }
 
   await fs.writeFile(pathToFile, JSON.stringify(content, null, 4))
 
 
- }
-    
 
 
 }
