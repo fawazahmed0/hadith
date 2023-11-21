@@ -14,12 +14,13 @@ async function test(){
       }
       var requestOptions = {
         method:"POST",
-         headers: {"Authorization": "Basic ZWxhc3RpYzpXekswNXRTVVh4UzZibUlZRHhzOQ==",
+         headers: {
          "Content-Type": "application/json",
-         "Accept": "application/json"},
+         "Accept": "application/json"
+        },
          body:JSON.stringify(jsonval)
        }
-    let res = await fetch("https://192.168.1.192:9200/"+indexname+"/_search", requestOptions)
+    let res = await fetch("http://localhost:9200/"+indexname+"/_search", requestOptions)
     let data = await res.json()
     console.log(JSON.stringify(data,null,4))
 
