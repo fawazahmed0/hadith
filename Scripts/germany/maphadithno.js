@@ -27,7 +27,9 @@ async function begin(){
     bigArr.push(value)
   }
 
-  await fs.writeFile(pathToFile, JSON.stringify(content, null, 4))
+  
+
+  await fs.writeFile(path.join(__dirname, 'compiled5', fileName.replace(/\.json/i, '')+'.txt'), bigArr.map(e=>`${e[2] || e[3]} | ${e[1]}`).join('\n'))
 
 
 
@@ -49,7 +51,7 @@ async function search(text, indexName){
         "query": {
           "match": {
             "column2": 
-            text.normalize("NFD").replace(/\p{Diacritic}|\p{Mark}|\p{Extender}|\p{Bidi_Control}/gu, "")
+            text?.normalize("NFD")?.replace(/\p{Diacritic}|\p{Mark}|\p{Extender}|\p{Bidi_Control}/gu, "")
           }
         }
       }
